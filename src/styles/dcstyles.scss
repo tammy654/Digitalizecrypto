@@ -30,7 +30,7 @@ body{
     position: relative;
 }
 .bg{
-    background-color: var(--bg_color_1);
+    background-color: var(--white-bg);
 }
 .heading{
     width: 100%;
@@ -234,12 +234,85 @@ body{
     font-weight: bold;
 }
 .nav{
-    width:100%;
-    height:fit-content;
-    background-color: transparent;
-    position: absolute;
-    z-index: 1000;
-    margin: auto;
-    margin-top: 40px;
-    position: relative;
+    width:100%; 
+    height: 90px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+    transition: all 0.7s ease-out;
+    background-color: var(--bg_color_1);
+}
+.nav .sub{
+width: 90%; 
+height: 100%;
+left: 0px; 
+top: 20px; 
+display: flex;
+flex-direction: row;
+justify-content: space-between; 
+align-items: center;
+gap: 0px; 
+margin: auto;
+}
+.nav .sub 
+.nav .sub .navbrand .logoMark{
+width:fit-content;
+height: clamp(50px, 2vw, 60px);
+}
+.nav .sub .menu{ 
+width: fit-content;
+height: 100%;
+display:flex;
+justify-content: center; 
+align-items: center;  
+
+}
+.nav .sub .menu .linkSecInHeader{
+width: fit-content;
+display: flex;
+justify-content: center; 
+align-items: center; 
+gap: clamp(30px, 2vw, 60px); 
+} 
+.nav .sub .menu .linkSecInHeader .menuLink{
+padding: 8px; 
+justify-content: center; 
+align-items: center; 
+gap: 10px; 
+display: flex;
+/* background-color: #08bcdd; */
+}
+.nav .sub .menu .linkSecInHeader .menuLink:hover a{
+color: var(--accent_color_1);
+align-self: stretch;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+font-family: var(--text_font2);
+}
+.nav .sub .menu .linkSecInHeader .menuLink a{ 
+color: var(--dark_color);  
+word-wrap: break-word;
+display: flex;
+text-align: center;
+padding-block: 1rem 1rem;
+text-decoration: none;
+text-transform: none;
+font-family: var(--text_font2);
+font-size: clamp(1rem, 2vw, 1.6rem);
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.15px;
+cursor: pointer;
+}
+.nav .sub .menu .linkSecInHeader  a.active{
+color: var(--accent_color_1);
+}
+.nav .sub .click{
+width: fit-content;
+height: auto;
+display: flex;
+gap: 24px;
 }

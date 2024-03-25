@@ -16,7 +16,7 @@ function Header() {
         <main>
             <div class="nav w3-bar w3-top">
                 <div class="sub w3-cell">
-                    <div class="navbrand w3-col l1 m1 s1"><img class="logoMark" src={ require ("../img/learnstack-logo.png")} alt="oracle_trading_logo" /></div>
+                    <div class="navbrand w3-col l1 m1 s1"><img class="logoMark" src={ require ("../img/digitalizecrypto_logo.png")} alt="digitalizecrypto_logo" /></div>
                     <div class="menu ">
                         <ul class="linkSecInHeader w3=cell">
                             <li class="home menuLink w3-hide-medium w3-hide-small" >

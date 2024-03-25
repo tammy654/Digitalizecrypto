@@ -3,10 +3,10 @@ import './App.css';
 import { Helmet } from "react-helmet";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import AnimatedRoutes from './components/AnimatedRoutes';
+import AnimatedRoutes from './Components/AnimatedRoutes';
 import { ToastContainer } from 'react-custom-alert'; 
 
-
+import React, { useEffect } from "react";
 function App() {
   useEffect(() => {
     // 👇 add class to body element
@@ -27,7 +27,7 @@ function App() {
   return (
    <>
       <Helmet>
-        <title>Learnstack.com</title>
+        <title>Digitalizecrypto.com</title>
       </Helmet>
       <Header />
       <AnimatedRoutes />
