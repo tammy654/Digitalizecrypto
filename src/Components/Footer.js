@@ -17,7 +17,7 @@ function Footer() {
           <div class="info w3-rest w3-stretch">
           <div class="footerMenu a ">
               <div class="links logo ">
-               <img class="logoMark" src={ require ("../img/learnstack-logo-white.png")} alt="oracle_trading_logo"></img><p class="details">
+               <img class="logoMark" src={ require ("../img/digitalizecrypto_logo_white.png")} alt="oracle_trading_logo"></img><p class="details">
                 Learn Stack is more than just an academy; 
                 it's a gateway to unlocking your full potential. 
                 Explore our diverse courses, embark on a journey of skill enhancement, 
