@@ -18,7 +18,7 @@ function Header() {
         <main>
             <div class="nav w3-bar w3-top">
                 <div class="sub w3-cell">
-                    <div class="navbrand w3-col l1 m1 s1"><img class="logoMark" src={ require ("../img/3D_logo.png")} alt="digitalizecrypto_logo" /></div>
+                    <div class="navbrand w3-col l1 m1 s1"><img class="logoMark" src={ require ("../img/threed_logo.png")} alt="digitalizecrypto_logo" /></div>
                     <div class="menu ">
                         <ul class="linkSecInHeader w3=cell">
                             <li class="home menuLink w3-hide-medium w3-hide-small" >
@@ -51,7 +51,7 @@ function Header() {
                         </Link>
                         <Link to="/signin">
                             <button className="btn2  w3-hide-medium w3-hide-small">
-                            <p>login</p>
+                            <p>Login</p>
                             </button>
                         </Link>
                     </div>
@@ -73,7 +73,6 @@ function Header() {
                 <li class="faq menuLink"  >
                     <a ><NavLink activeClassName="active" to="/faq"  id="faq" onClick={menuDropClose}>FAQ</NavLink></a>
                 </li>
-
                 <li class="statistics menuLink" >
                 <a className='menuSmall'><NavLink activeClassName="active" to="/statistics"  id="statistics" onClick={menuDropClose}>Statistics</NavLink></a>
                 </li> 
@@ -82,14 +81,14 @@ function Header() {
                     <a className='menuSmall'><NavLink activeClassName="active" to="/contact"  id="contact">Contact</NavLink></a>
                 </li>
                 <div className='click'>
-                        <Link to="/signin">
-                            <button className="btn2">
-                            <p>Sign In</p>
-                            </button>
-                        </Link>
                         <Link to="/register">
                             <button className="btn">
-                            <p>Register</p>
+                            <p>Registration</p>
+                            </button>
+                        </Link>
+                        <Link to="/login">
+                            <button className="btn2">
+                            <p>Login</p>
                             </button>
                         </Link>
                     </div>  
