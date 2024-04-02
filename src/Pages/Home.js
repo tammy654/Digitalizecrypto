@@ -51,17 +51,262 @@ function Home() {
         </div>
         <div className='tab'>
           <div className='side top'>
-            <div className="tag a"></div>
-            <div className="tag b"></div>
-            <div className="tag c"></div>
+            <div className="tag a selected">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag b">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag c">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
           </div>
           <div className='side bottom'>
-          <div className="tag a"></div>
-            <div className="tag b"></div>
-            <div className="tag c"></div>
+            <div className="tag d">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag e">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag f">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div className="homepage-section-three">
+     <div className='sub'>
+      <div className='write-up tab'>
+        <h1 className='sub-heading'>
+        GENERAL COMMISION
+        </h1>
+        <p className='details'>
+        Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit viverra aliquet 
+        <br></br><br></br><br></br>
+
+        <li>
+        COMPANY COMMISSION: curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit viverra aliquet 
+        </li>
+        <li>
+        ADMINISTRATIVE COMMISION: curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit viverra aliquet 
+      </li>
+</p>
+      </div>
+     </div>
+    </div>
+    <div className="homepage-section-two second">
+      <div className='sub'>
+        <div className="headline">
+            <div class="line"></div>
+            <h1 className="sub-heading">Live Testimonials</h1>
+            <div class="line"></div>
+        </div>
+        <div className='tab'>
+          <div className='side top'>
+            <div className="tag a selected">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag b">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag c">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+          </div>
+          <div className='side bottom'>
+            <div className="tag d">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag e">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+            <div className="tag f">              
+              <div className='tab'>
+                <div className='left'>
+                   <h1 className='heading'>1.8</h1>
+                    <div className='right'>
+                    <p className='details'>
+                      % 
+                      <br></br>
+                      STARTING
+                    </p>
+                </div>
+                </div>
+              </div>
+              <h1 className="details">DAILY:</h1>
+              <h1 className="details">DEPOSIT:</h1>
+              <h1 className="sub-heading">$1000-$5000</h1>
+              <p className="details"> 7 Days</p>
+            </div>
+          </div>
+        </div>
+        </div>
       <div>
 
       </div>
@@ -85,43 +330,6 @@ function Home() {
 </p>
       </div>
      </div>
-    </div>
-    <div className="homepage-section-two">
-      <div className='sub'>
-        <div className="headline">
-            <div class="line"></div>
-            <h1 className="sub-heading">Live Testimonials</h1>
-            <div class="line"></div>
-        </div>
-        <div className='tab'>
-          <div className='side top'>
-            <div className="tag a">              
-              <div className='tab'>
-                <h1 className='heading'>1.8</h1>
-                <p className='details'>
-                  % 
-                  <br></br>
-                  STARTING
-                </p>
-              </div>
-              <h1 className="details">DAILY:</h1>
-              <h1 className="details">DEPOSIT:</h1>
-              <h1 className="sub-heading">$1000-$5000</h1>
-              <p className="details"> 7 Days</p>
-            </div>
-            <div className="tag b"></div>
-            <div className="tag c"></div>
-          </div>
-          <div className='side bottom'>
-          <div className="tag a"></div>
-            <div className="tag b"></div>
-            <div className="tag c"></div>
-          </div>
-        </div>
-      </div>
-      <div>
-
-      </div>
     </div>
     </>
   )

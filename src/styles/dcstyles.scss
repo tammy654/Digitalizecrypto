@@ -8,6 +8,7 @@
     --text_color_1:  #161513;
     --text_color_2: #E7E5EF;
     --accent_color_1: #294E9A;
+    --accent_color_2: #828C9F;
 
     --accent_color_2: #061940;
     --overlay_color_1: linear-gradient(to bottom, #061940, #294E9A);
@@ -349,7 +350,7 @@ gap: 24px;
 .homepage-hero-section{
   width: 100%;
   height: 95vh;
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(https://res.cloudinary.com/dwvncdtni/image/upload/v1712057778/digitalizecrypto/hero-bg_ka9zjs.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -498,31 +499,229 @@ gap: 24px;
           gap: 10px;
           justify-content: center;
           align-items: center;
-          .tab{
-            width: 100%;
-            height: 50%;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: left;
-            background-color: #ff0000;
-            h1{
-              width: auto;
-              margin: auto;
-            }
-            p{
-              margin: auto;
-              color: var(--text_color_2);
-            }
-          }
+          background: var(--bg_color_1);
+          padding-block: 3%;
+          padding-inline: 4%;
+          border: 2px solid var(--accent_color_1);
+          cursor: pointer;
+          transition: all 0.3s ease-in-out 0s;
           .details{
             width: 100%;
+            font-weight: 600;
+            background: var( --bg_color_2);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+            text-align: left;
           }
           .sub-heading{
             width: 100%;
+            background: var( --bg_color_2);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+          }
+          .tab{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            .left{
+              width: 30%;
+              height: 100%;
+              align-items: center;
+              display: inline-flex; 
+              flex-direction: row;
+              align-items: center;
+              justify-content: left;
+              h1{
+                font-size: clamp(3rem, 3vw, 4rem); 
+                padding: 0px;
+                text-align: left;
+                margin-right: 10px;
+                background: var( --bg_color_2);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+              }
+              .right{
+                height: 100%;
+                align-items: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: left;
+                p{
+                  margin: auto;
+                  font-size: clamp(1rem, 2vw, 1.2rem);
+                }
+              }
+            }
+           
+          }
+          &:hover{
+            width: 430px;
+          height: 376px;
+          border-radius: 25px;
+          grid-template-columns: auto;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          background: var(--bg_color_2);
+          padding-block: 3%;
+          padding-inline: 4% ;
+          .details{
+            width: 100%;
+            font-weight: 600;
+            background: var( --bg_color_1);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+            text-align: left;
+          }
+          .sub-heading{
+            width: 100%;
+            background: var( --bg_color_1);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+          }
+          .tab{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            .left{
+              width: 30%;
+              height: 100%;
+              align-items: center;
+              display: inline-flex; 
+              flex-direction: row;
+              align-items: center;
+              justify-content: left;
+              h1{
+                font-size: clamp(3rem, 3vw, 4rem); 
+                padding: 0px;
+                text-align: left;
+                margin-right: 10px;
+                background: var( --bg_color_1);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+              }
+              .right{
+                height: 100%;
+                align-items: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: left;
+                p{
+                  margin: auto;
+                  font-size: clamp(1rem, 2vw, 1.2rem);
+                }
+              }
+            }
+           
+          }
           }
         }
-        
+        .selected{
+          width: 430px;
+          height: 376px;
+          border-radius: 25px;
+          grid-template-columns: auto;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          background: var(--bg_color_2);
+          padding-block: 3%;
+          padding-inline: 4% ;
+          .details{
+            width: 100%;
+            font-weight: 600;
+            background: var( --bg_color_1);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+            text-align: left;
+          }
+          .sub-heading{
+            width: 100%;
+            background: var( --bg_color_1);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+          }
+          .tab{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            .left{
+              width: 30%;
+              height: 100%;
+              align-items: center;
+              display: inline-flex; 
+              flex-direction: row;
+              align-items: center;
+              justify-content: left;
+              h1{
+                font-size: clamp(3rem, 3vw, 4rem); 
+                padding: 0px;
+                text-align: left;
+                margin-right: 10px;
+                background: var( --bg_color_1);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+              }
+              .right{
+                height: 100%;
+                align-items: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: left;
+                p{
+                  margin: auto;
+                  font-size: clamp(1rem, 2vw, 1.2rem);
+                }
+              }
+            }
+           
+          }
+        }
       }
     }
   }
