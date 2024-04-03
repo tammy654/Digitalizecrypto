@@ -8,10 +8,10 @@ import {motion} from "framer-motion";
 function Home() {
   return (
     <>
-    <div class="homepage-section-fx">
+    <div className="homepage-section-fx">
 
     </div>
-    <div class="homepage-hero-section">
+    <div className="homepage-hero-section">
       <div className='write-up'>
         <h1 className='heading'>
         SAFE INVESTMENT WITH DIGITALIZE CRYPTO
