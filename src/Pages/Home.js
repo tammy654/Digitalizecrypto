@@ -4,6 +4,7 @@ import SupportCard from "../Components/SupportCard";
 import supportImage from "../img/support.png";
 import stepsImage from "../img/steps-img.png";
 import paymentImage from "../img/payment-img.png";
+import testimonialImage from "../img/testimonial-img.png";
 
 const proposals = [
   {
@@ -87,12 +88,30 @@ const steps = [
 ];
 
 const testimonials = [
-  "No item yet",
-  "No item yet",
-  "No item yet",
-  "No item yet",
-  "No item yet",
-  "No item yet",
+  {
+    image: testimonialImage,
+    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+  },
+  {
+    image: testimonialImage,
+    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+  },
+  {
+    image: testimonialImage,
+    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+  },
+  {
+    image: testimonialImage,
+    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+  },
+  {
+    image: testimonialImage,
+    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+  },
+  {
+    image: testimonialImage,
+    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+  },
 ];
 function Home() {
   return (
@@ -238,10 +257,17 @@ function Home() {
             <div class="line"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-3 sm:px-[100px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-3 sm:px-[100px]">
             {testimonials.map((testimonial, index) => (
-              <div className="border border-solid  border-primary-blue rounded-lg flex items-center justify-center h-40">
-                <p>{testimonial}</p>
+              <div className="bg-primary-blue rounded-lg flex flex-col gap-5 items-center justify-center px-3 py-10">
+                <div className="flex justify-center ">
+                  <img
+                    src={testimonial.image}
+                    alt="testimonial"
+                    className="w-[293px] h-[213px]"
+                  />
+                </div>
+                <p className="text-center text-white">{testimonial.text}</p>
               </div>
             ))}
           </div>
