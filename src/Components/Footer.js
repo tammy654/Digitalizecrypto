@@ -1,9 +1,80 @@
 import React from "react";
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import { scrollButton } from "../scripts/all_scripts";
 import { useLocation } from "react-router-dom";
 
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 const withouNavbarRoutes = ["/error-404"];
+
+const routes = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About us",
+    link: "/about",
+  },
+  {
+    name: "Investment",
+    link: "/investment",
+  },
+  {
+    name: "FAQ",
+    link: "/faq",
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+  },
+  {
+    name: "Terms of service",
+    link: "/terms",
+  },
+  {
+    name: "Privacy policy",
+    link: "/privacy",
+  },
+];
+
+const investors = [
+  {
+    name: "Login",
+    link: "/login",
+  },
+  {
+    name: "Sign up",
+    link: "/signup",
+  },
+  {
+    name: "Account Manager",
+    link: "/account",
+  },
+  {
+    name: "Company Certificate",
+    link: "/company",
+  },
+];
+
+const socials = [
+  {
+    icon: <FaFacebook className="w-6 h-6" />,
+    link: "",
+  },
+  {
+    icon: <FaTwitter className="w-6 h-6" />,
+    link: "",
+  },
+  {
+    icon: <FaInstagram className="w-6 h-6" />,
+    link: "",
+  },
+  {
+    icon: <FaLinkedin className="w-6 h-6" />,
+    link: "",
+  },
+];
 
 function Footer() {
   const { pathname } = useLocation();
@@ -11,108 +82,66 @@ function Footer() {
   if (withouNavbarRoutes.some((item) => pathname.includes(item))) return null;
 
   return (
-    <div className="footer">
-      <div class="sub">
-        <div class="top">
-          <div class="info w3-rest w3-stretch">
-          <div class="footerMenu a ">
-              <div class="links logo ">
-               <img class="logoMark" src={ require ("../img/digitalizecrypto_logo_white.png")} alt="oracle_trading_logo"></img><p class="details">
-                Learn Stack is more than just an academy; 
-                it's a gateway to unlocking your full potential. 
-                Explore our diverse courses, embark on a journey of skill enhancement, 
-                and elevate your expertise in the ever-evolving digital landscape.
-                </p>
-              </div>
-            </div>
-            <div class="footerMenu b  ">
-              <div class="links ">
-                <h1 class="subtitle">Company</h1>
-                <a>
-                  <NavLink exact activeClassName="active" to="/" id="home">
-                    Home
-                  </NavLink>
-                </a>
-                <a>
-                  <NavLink activeClassName="active" to="/about" id="about">
-                    About Us
-                  </NavLink>
-                </a>
-                <a>
-                  <NavLink activeClassName="active" to="/courses" id="courses">
-                    Our Courses
-                  </NavLink>
-                </a>
-                <a>
-                  <NavLink activeClassName="active" to="/blogs" id="blogs">
-                   Blogs
-                  </NavLink>
-                </a>
-                <a>
-                  <NavLink activeClassName="active" to="/contact" id="contact">
-                    Contact Us
-                  </NavLink>
-                </a>
-              </div>
-              <div class="links  ">
-                <h1 class="subtitle">Contact</h1>
-                <div className="contact-details phone">
-                  <p className="details">
-                    <i class="fa-solid fa-phone icon"></i>
-                    +916908827
-                  </p>
-                </div>
-                <div className="contact-details email">
-                  <p className="details">
-                    <i class="fa-solid fa-phone icon"></i>
-                    +916908827
-                  </p>
-                </div>
-                <div className="contact-details address">
-                  <p className="details">
-                    <i class="fa-solid fa-location-dot icon"></i>
-                    20 Peremabiri Street D-Line PH City Nigeria
-                  </p>
-                </div>
-              </div>
-              <div class="links aboutus ">
-                <h1 class="subtitle">Subscribe</h1>
-                <div class="sub_input">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter Email"
-                    class="w3-col l10 m10 s10"
-                  />
-                  <button class="btn">
-                    <span class="">Subscribe</span>
-                  </button>
-                </div>
-                <div class="socials">
-                  <a>
-                    <i class="fa-brands fa-facebook"></i>
-                  </a>
-                  <a>
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                  <a>
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+    <div className="footer border-t border-solid border-primary-blue px-3 sm:px-[100px] py-20">
+      <div className="flex flex-wrap justify-between gap-10">
+        <div>
+          <h1 className="font-medium text-lg text-primary-blue">
+            Useful Links
+          </h1>
+          <div className="flex flex-col gap-3">
+            {routes.map((route, index) => (
+              <Link
+                key={index}
+                to={route.link}
+                className="text-primary-blue text-base hover:font-bold"
+              >
+                {route.name}
+              </Link>
+            ))}
           </div>
         </div>
-        <div class="bottom">
-          <div class="line"></div>
-          <div id="copyrights">
-            <p>
-            Copyright 2023 All right reserve LearnStack.com Powered by Starpro Version Affiliate LTD
-            </p>
+
+        <div>
+          <h1 className="font-medium text-lg text-primary-blue">Investors</h1>
+          <div className="flex flex-col gap-3">
+            {investors.map((route, index) => (
+              <Link
+                key={index}
+                to={route.link}
+                className="text-primary-blue text-base hover:font-bold"
+              >
+                {route.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="w-[470px]">
+          <h1 className="font-medium text-lg text-primary-blue">Newsletter</h1>
+          <p>Subscribe to our newsletter</p>
+          <div className="flex mt-4 gap-2 h-14 w-full">
+            <input
+              type="text"
+              className="h-full w-full p-2 border border-solid border-primary-blue rounded-lg"
+            />
+            <button className="bg-primary-blue border border-solid border-primary-blue text-white hover:bg-transparent hover:text-primary-blue h-full px-5 rounded-lg">
+              Subscribe
+            </button>
+          </div>
+          <div className="flex mt-5 gap-8 items-center">
+            {socials.map((social, index) => (
+              <Link
+                key={index}
+                to={social.link}
+                className="text-primary-blue hover:text-black duration-300"
+              >
+                {social.icon}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
+
       <div class="float" onClick={scrollButton}>
         <div class="float-btn">
           <a href="#" class="fas fa-level-up-alt"></a>
