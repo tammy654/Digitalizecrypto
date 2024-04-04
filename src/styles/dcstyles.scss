@@ -356,6 +356,14 @@ body {
   .write-up {
     p {
       color: var(--text_color_2);
+      width: 100%;
+      font-family: var(--text_font1);
+      margin-bottom: 1rem;
+      flex: 1 1 0;
+      text-align: left;
+      letter-spacing: 0.25px;
+      word-wrap: break-word;
+
     }
   }
 }
@@ -422,16 +430,12 @@ body {
     .headline {
       width: 70%;
       height: 10%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+   
       margin: auto;
       padding-inline: 50px;
       margin-bottom: 20px;
       .line {
         margin: auto;
-        margin-right: 10px;
       }
       .sub-heading {
         margin: auto;
