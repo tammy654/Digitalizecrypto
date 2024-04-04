@@ -129,8 +129,8 @@ function Home() {
         </div>
       </div>
       <div className="homepage-section-fx two"></div>
-      <div className="homepage-section-one sm:px-[100px]">
-        <div className="sub flex flex-col md:flex-row gap-10 md:gap-20 py-14 px-3 md:rounded-2xl md:px-20 lg:gap-10 items-center">
+      <div className="homepage-section-one md:px-[100px]">
+        <div className="sub flex flex-col md:flex-row gap-10 md:gap-20 py-14 px-3 md:rounded-2xl md:px-20 lg:gap-28 items-center">
           <div className="left flex justify-center md:justify-end">
             <img
               src={require("../img/threed_logo.png")}
