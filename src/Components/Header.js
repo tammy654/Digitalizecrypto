@@ -22,24 +22,24 @@ function Header() {
                     <div class="menu ">
                         <ul class="linkSecInHeader w3=cell">
                             <li class="home menuLink w3-hide-medium w3-hide-small" >
-                                <a ><NavLink exact activeClassName="active" to="/"  id="home">Home</NavLink></a >
+                                <NavLink to="/" id="home">Home</NavLink>
                             </li>
                             <li class="about menuLink w3-hide-medium w3-hide-small" >
-                                <a ><NavLink activeClassName="active" to="/about"  id="about">About Us</NavLink></a >
+                                <NavLink to="/about"  id="about">About Us</NavLink>
                             </li>
                             <li class="menuLink w3-hide-medium w3-hide-small" >
-                                <a ><NavLink activeClassName="active" to="/investments"  id="investments">Investments</NavLink></a >
+                                <NavLink to="/investments"  id="investments">Investments</NavLink>
                             </li>
                             <li class="faq menuLink w3-hide-medium w3-hide-small" >
-                                <a ><NavLink activeClassName="active" to="/faq"  id="faq">FAQ</NavLink></a>
+                                <NavLink to="/faq"  id="faq">FAQ</NavLink>
                             </li>
                            
                             <li class="statistics menuLink w3-hide-medium w3-hide-small" >
-                                <a ><NavLink activeClassName="active" to="/statistics"  id="statistics">Statistics</NavLink></a>
+                                <NavLink to="/statistics"  id="statistics">Statistics</NavLink>
                             </li>
 
                             <li class="contact menuLink w3-hide-medium w3-hide-small" >
-                                <a ><NavLink activeClassName="active" to="/contact"  id="contact">Contact</NavLink></a>
+                                <NavLink to="/contact"  id="contact">Contact</NavLink>
                             </li>
                         </ul>
                     </div>
