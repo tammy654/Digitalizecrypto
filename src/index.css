@@ -7,8 +7,18 @@
     --bg_color_2: linear-gradient(to bottom, #061940, #294e9a);
     --primary-blue: #061940;
     --active-blue: #23b7d9;
+    --gray-shade-1: #242424;
     /* ... */
   }
+}
+
+.rm_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.login_screen {
+  height: 100svh;
+  width: 100%;
 }
 
 .active {
@@ -20,5 +30,13 @@
 }
 
 .linear_bg {
-  background: var(--bg_color_2);
+  background: linear-gradient(to bottom, #061940, #294e9a);
+}
+
+.linear_to_right {
+  background: linear-gradient(to right, #061940, #294e9a);
+}
+
+.linear_to_left {
+  background: linear-gradient(to left, #061940, #294e9a);
 }

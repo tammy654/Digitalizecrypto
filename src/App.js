@@ -29,7 +29,7 @@ function App() {
         <title>Digitalizecrypto.com</title>
       </Helmet>
       <Header />
-      <div className="mb-56">
+      <div>
         <AnimatedRoutes />
       </div>
       <Footer />

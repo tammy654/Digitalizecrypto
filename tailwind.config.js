@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         "primary-blue": "var(--primary-blue)",
-        "linear-blue": "var(----bg_color_2)",
+        "linear-blue": "var(--bg_color_2)",
+        "gray-shade-1": "var(--gray-shade-1)",
       },
     },
   },
