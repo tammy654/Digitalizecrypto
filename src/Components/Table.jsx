@@ -8,7 +8,7 @@ const Table = ({ title, data }) => {
       </div>
       <table className="w-full mt-4 text-sm font-semibold text-primary-blue md:text-base min-[1450px]:text-xl">
         {data.map((item, index) => (
-          <tr>
+          <tr key={index}>
             <td className="text-left">{item.name}</td>
             <td className="text-center">{item.amount}</td>
             <td className="text-right">{item.date}</td>

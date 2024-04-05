@@ -21,7 +21,7 @@ const Traders = ({ supports }) => {
         <div className="px-3 sm:px-[100px] my-5">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {supports.map((support, index) => (
-              <div>
+              <div key={index}>
                 <SupportCard support={support} />
               </div>
             ))}

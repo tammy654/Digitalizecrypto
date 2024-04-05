@@ -2,7 +2,6 @@ import React from "react";
 import { Outlet, Link, NavLink } from "react-router-dom";
 import { menuDropClose } from "../scripts/all_scripts";
 import { useLocation } from "react-router-dom";
-import { Menu, MenuList, MenuButton, MenuItem } from "@chakra-ui/react";
 
 const withouNavbarRoutes = ["/signin", "/register", "/dashboard", "/error-404"];
 
