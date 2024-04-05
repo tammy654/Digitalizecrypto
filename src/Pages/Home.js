@@ -106,10 +106,12 @@ function Home() {
       <div class="homepage-hero-section flex items-center">
         <div className="write-up w-[639px] px-5 md:pl-[100px] flex flex-col gap-10">
           <h1 className="heading">SAFE INVESTMENT WITH DIGITALIZE CRYPTO</h1>
-          <p className="details">
-            Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac
-            etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas
-            donec mauris ipsum vitae l
+          <p className="uppercase text-3xl">
+            <span className="marker bg-white p-1 font-semibold rounded-lg">
+              {" "}
+              get
+            </span>{" "}
+            a lifetime on investments.
           </p>
           <button className="btn3">Open Deposit</button>
         </div>
@@ -127,11 +129,15 @@ function Home() {
           <div className="write-up right">
             <h1 className="sub-heading">ABOUT US</h1>
             <p className="details">
-              Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac
-              etiam metus amet. Sagittis diam duis tortor in. Id curabitur
-              egestas donec mauris ipsum vitae lorem non semper. Quam urna felis
-              massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem
-              tortor vitae morbi. Sit viverra aliquet
+              At Digitalizecrypto, we believe the future is digital, and finance
+              is no exception. We're a passionate team, dedicated to making
+              cryptocurrency accessible and empowering for everyone. Whether
+              you're a seasoned investor or just starting your crypto journey,
+              we offer a secure and user-friendly platform to buy, sell, and
+              trade digital assets. We're committed to providing top-notch
+              customer support and educational resources to help you navigate
+              the exciting world of crypto. Join us and unlock the potential of
+              digital finance with Digitalizecrypto.
             </p>
             <button className="btn4">Read More</button>
           </div>
@@ -139,7 +145,7 @@ function Home() {
       </div>
       <div className="homepage-section-two p-3 sm:p-[100px]">
         <div className="sub">
-          <div className="headline flex justify-center gap-2 items-center">
+          <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
             <h1 className="uppercase text-2xl font-bold text-center">
               Investment Proposals
@@ -161,11 +167,13 @@ function Home() {
         <GeneralCommission />
       </div>
 
-      <div className="homepage-section-two">
+      <div className="homepage-section-two ">
         <div className="sub">
-          <div className="headline px-3">
+          <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="sub-heading">Live Testimonials</h1>
+            <h1 className="uppercase text-2xl font-bold text-center">
+              Live Testimonials
+            </h1>
             <div class="line"></div>
           </div>
 
