@@ -1,11 +1,11 @@
 import React from "react";
-import { Outlet, NavLink, Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { scrollButton } from "../scripts/all_scripts";
 import { useLocation } from "react-router-dom";
 
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-const withouNavbarRoutes = ["/error-404"];
+const withouNavbarRoutes = ["/signin", "/register", "/dashboard", "/error-404"];
 
 const routes = [
   {
@@ -144,7 +144,7 @@ function Footer() {
 
       <div class="float" onClick={scrollButton}>
         <div class="float-btn">
-          <a href="#" class="fas fa-level-up-alt"></a>
+          <a href="#" className="fas fa-level-up-alt"></a>
         </div>
       </div>
       <Outlet />
