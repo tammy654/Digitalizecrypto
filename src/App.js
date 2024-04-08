@@ -29,9 +29,7 @@ function App() {
         <title>Digitalizecrypto.com</title>
       </Helmet>
       <Header />
-      <div>
-        <AnimatedRoutes />
-      </div>
+      <AnimatedRoutes />
       <Footer />
       <ToastContainer floatingTime={5000} />
     </>

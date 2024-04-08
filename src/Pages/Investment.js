@@ -8,6 +8,11 @@ import bannerImage from "../img/investment-banner-image.png";
 import coinImage from "../img/investment-coin.png";
 import supportImage from "../img/support.png";
 
+import { Helmet } from "react-helmet";
+import { Outlet, Link } from "react-router-dom";
+import {motion} from "framer-motion"
+import { ScrollToTop } from '../scripts/all_scripts';
+
 const supports = [
   {
     image: supportImage,
@@ -83,6 +88,17 @@ const proposals = [
 
 const Investment = () => {
   return (
+    <motion.div 
+    initial={{width: 0, opacity: 0}}
+    animate={{width: "100%", opacity: 1}}
+    exit={{ x: window.innerWidth, transition: {
+    duration: 0.1, delay: 0}, opacity: 0}} > 
+      <ScrollToTop />
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>investments - Digitalizecrypto</title>
+            <link rel="canonical" href="http://digitalizecrypto.com/investments" />
+        </Helmet>
     <section className="text-base sm:text-xl mb-52">
       <div class="homepage-section-fx"></div>
       <div>
@@ -147,6 +163,9 @@ const Investment = () => {
         <Traders supports={supports} />
       </div>
     </section>
+    <Outlet />
+  
+  </motion.div>
   );
 };
 

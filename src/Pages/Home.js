@@ -1,11 +1,15 @@
 import DepositCards from "../Components/DepositCards";
-
 import supportImage from "../img/support.png";
 import paymentImage from "../img/payment-img.png";
 import testimonialImage from "../img/testimonial-img.png";
 import GeneralCommission from "../Components/GeneralCommission";
 import StartingSteps from "../Components/StartingSteps";
 import Traders from "../Components/Traders";
+
+import { Helmet } from "react-helmet";
+import { Outlet, Link } from "react-router-dom";
+import {motion} from "framer-motion"
+import { ScrollToTop } from '../scripts/all_scripts';
 
 const proposals = [
   {
@@ -101,7 +105,17 @@ const testimonials = [
 ];
 function Home() {
   return (
-    <>
+    <motion.div 
+    initial={{width: 0, opacity: 0}}
+    animate={{width: "100%", opacity: 1}}
+    exit={{ x: window.innerWidth, transition: {
+    duration: 0.1, delay: 0}, opacity: 0}} > 
+      <ScrollToTop />
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Home - Digitalizecrypto</title>
+            <link rel="canonical" href="http://digitalizecrypto.com/home" />
+        </Helmet>
       <div class="homepage-section-fx"></div>
       <div class="homepage-hero-section flex items-center">
         <div className="write-up w-[639px] px-5 md:pl-[100px] flex flex-col gap-10">
@@ -113,7 +127,11 @@ function Home() {
             </span>{" "}
             a lifetime on investments.
           </p>
-          <button className="btn3">Open Deposit</button>
+          <button className="btn3">
+            <Link to="/register" className="hover:text-primary-blue">
+            Open Account
+            </Link>
+            </button>
         </div>
       </div>
       <div className="homepage-section-fx two"></div>
@@ -256,7 +274,9 @@ function Home() {
           </div>
         </div>
       </section>
-    </>
+      <Outlet />
+  
+    </motion.div>
   );
 }
 

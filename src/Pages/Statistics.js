@@ -4,6 +4,11 @@ import Table from "../Components/Table";
 import bannerImage from "../img/stat-image.png";
 import statImage from "../img/stat-image.png";
 
+import { Helmet } from "react-helmet";
+import { Outlet, Link } from "react-router-dom";
+import {motion} from "framer-motion"
+import { ScrollToTop } from '../scripts/all_scripts';
+
 const depositData = [
   {
     name: "Joe steve",
@@ -62,6 +67,17 @@ const paymentData = [
 
 const Statistics = () => {
   return (
+    <motion.div 
+    initial={{width: 0, opacity: 0}}
+    animate={{width: "100%", opacity: 1}}
+    exit={{ x: window.innerWidth, transition: {
+    duration: 0.1, delay: 0}, opacity: 0}} > 
+      <ScrollToTop />
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Statistics - Digitalizecrypto</title>
+            <link rel="canonical" href="http://digitalizecrypto.com/statistics" />
+        </Helmet>
     <div className="mb-52">
       <div class="homepage-section-fx"></div>
       <div>
@@ -140,6 +156,9 @@ const Statistics = () => {
         </div>
       </div>
     </div>
+    <Outlet />
+  
+  </motion.div>
   );
 };
 

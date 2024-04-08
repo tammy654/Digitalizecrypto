@@ -8,6 +8,11 @@ import referralImage from "../img/referral-image.png";
 import levelsImage from "../img/levels-image.png";
 import clockSvg from "../img/clock-outline.svg";
 
+import { Helmet } from "react-helmet";
+import { Outlet, Link } from "react-router-dom";
+import {motion} from "framer-motion"
+import { ScrollToTop } from '../scripts/all_scripts';
+
 const content = {
   image: bannerImage,
   title: "Reliable Investment with Digitalizecrypto",
@@ -24,6 +29,17 @@ const steps = [
 
 const About = () => {
   return (
+    <motion.div 
+    initial={{width: 0, opacity: 0}}
+    animate={{width: "100%", opacity: 1}}
+    exit={{ x: window.innerWidth, transition: {
+    duration: 0.1, delay: 0}, opacity: 0}} > 
+      <ScrollToTop />
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>About - Digitalizecrypto</title>
+            <link rel="canonical" href="http://digitalizecrypto.com/about" />
+        </Helmet>
     <section>
       <div class="homepage-section-fx"></div>
       <div>
@@ -242,6 +258,9 @@ const About = () => {
         </div>
       </section>
     </section>
+    <Outlet />
+  
+  </motion.div>
   );
 };
 

@@ -1,6 +1,10 @@
 import Accordion from "../Components/Accordion";
 
 import bannerImage from "../img/faq-banner-image.png";
+import { Helmet } from "react-helmet";
+import { Outlet, Link } from "react-router-dom";
+import {motion} from "framer-motion"
+import { ScrollToTop } from '../scripts/all_scripts';
 
 const faqs = [
   {
@@ -42,6 +46,17 @@ const faqs = [
 
 const Faq = () => {
   return (
+    <motion.div 
+    initial={{width: 0, opacity: 0}}
+    animate={{width: "100%", opacity: 1}}
+    exit={{ x: window.innerWidth, transition: {
+    duration: 0.1, delay: 0}, opacity: 0}} > 
+      <ScrollToTop />
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>Faqs - Digitalizecrypto</title>
+            <link rel="canonical" href="http://digitalizecrypto.com/faqs" />
+        </Helmet>
     <section className="mb-52">
       <div class="homepage-section-fx"></div>
       <div>
@@ -67,6 +82,9 @@ const Faq = () => {
         </div>
       </div>
     </section>
+    <Outlet />
+  
+  </motion.div>
   );
 };
 
