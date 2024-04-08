@@ -24,14 +24,14 @@ function Header() {
             <div class="menu ">
               <ul class="linkSecInHeader w3=cell">
                 <li class="home menuLink w3-hide-medium w3-hide-small">
-                  <NavLink to="/" id="home">
-                    Home
-                  </NavLink>
+                <a><NavLink to="/" id="home">
+                    Home 
+                  </NavLink></a>
                 </li>
                 <li class="about menuLink w3-hide-medium w3-hide-small">
-                  <NavLink to="/about" id="about">
+                <a><NavLink to="/about" id="about">
                     About Us
-                  </NavLink>
+                  </NavLink></a>
                 </li>
                 <li class="menuLink w3-hide-medium w3-hide-small">
                   <NavLink to="/investments" id="investments">

@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Outlet} from "react-router-dom";
 import {motion} from "framer-motion";
 
-function Profile() {
+const Profile = () => {
   return (
     <motion.div 
     initial={{width: "0",  opacity: 0}}
@@ -98,6 +98,6 @@ function Profile() {
   
     </motion.div>
   )
-}
+};
 
 export default Profile

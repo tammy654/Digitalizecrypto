@@ -1,16 +1,16 @@
-import React, { useState } from "react"
-import { Helmet } from "react-helmet"
-import { Flex, IconButton } from "@chakra-ui/react"
-import { motion, AnimatePresence } from "framer-motion"
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import { Flex, IconButton } from "@chakra-ui/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ScrollToTop } from '../scripts/all_scripts';
 
-import { Routes, Route, Outlet, NavLink, useLocation } from "react-router-dom"
+import { Routes, Route, Outlet, NavLink, useLocation } from "react-router-dom";
 
-import Profile from "../components/Profile"
-import Payment from "../components/Payment"
-import Platform from '../components/PaymentPlatform';
-import Trade from "../components/Trade"
-import NavItem from "../components/NavItem"
+import Profile from "../Components/Profile"
+import Payment from "../Components/Payment";
+import Platform from '../Components/PaymentPlatform';
+import Trade from "../Components/Trade";
+import NavItem from "../Components/NavItem"
 
 import { MdPayment, MdLogout } from "react-icons/md"
 import { LuSettings } from "react-icons/lu"
@@ -37,8 +37,8 @@ export default function Dashboard ({ children }) {
       <ScrollToTop />
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Dashboard - Oracle Trading</title>
-        <link rel="canonical" href="http://oracletrading.com/dashboard" />
+        <title>Dashboard - Digitalizecrpyto.com</title>
+        <link rel="canonical" href="http://digitalizecrypto.com/dashboard" />
       </Helmet>
       <Flex w="100%" backgroundColor={"white"}>
         <Flex  bgColor={"none"}>
@@ -72,8 +72,8 @@ export default function Dashboard ({ children }) {
                 >
                   <img
                     class="logoMark"
-                    src={require("../img/logo-oracle-trading-2.png")}
-                    alt="oracle_trading_logo"
+                    src={require("../img/threed_logo.png")}
+                    alt="digitalizecrypto_logo"
                   />
                 </div>
                 <IconButton
