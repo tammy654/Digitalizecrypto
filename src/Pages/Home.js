@@ -1,7 +1,14 @@
 import DepositCards from "../Components/DepositCards";
 import supportImage from "../img/support.png";
-import paymentImage from "../img/payment-img.png";
-import testimonialImage from "../img/testimonial-img.png";
+import supportImage2 from "../img/support2.png";
+import supportImage3 from "../img/support3.png";
+import paymentImage from "../img/payment.png";
+import testimonialImage1 from "../img/testimonial-img.png";
+import testimonialImage2 from "../img/testimonial-img-2.png";
+import testimonialImage3 from "../img/testimonial-img-3.png";
+import testimonialImage4 from "../img/testimonial-img-4.png";
+import testimonialImage5 from "../img/testimonial-img-5.png";
+import testimonialImage6 from "../img/testimonial-img-6.png";
 import GeneralCommission from "../Components/GeneralCommission";
 import StartingSteps from "../Components/StartingSteps";
 import Traders from "../Components/Traders";
@@ -47,8 +54,13 @@ const proposals = [
 const supports = [
   {
     image: supportImage,
-    title: "24/7 Support",
-    text: "Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa",
+    title: "UNIQUE TRADING BOT",
+    text: "Digitalizecrypto team of professionals has created a unique trading robot that makes profit at any stage of the market: rise or fall",
+  },
+  {
+    image: supportImage2,
+    title: "STABLE AND AUTOMATED INVESTMENT",
+    text: "The robot is not human-related. And that is why all investments are reliable and completely safe"
   },
   {
     image: supportImage,
@@ -56,14 +68,9 @@ const supports = [
     text: "Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa",
   },
   {
-    image: supportImage,
-    title: "24/7 Support",
-    text: "Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa",
-  },
-  {
-    image: supportImage,
-    title: "24/7 Support",
-    text: "Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa",
+    image: supportImage3,
+    title: "THE EXPERTS WILL DO EVERYTHING FOR YOU",
+    text: "The highly professional Digitalizecrypto team controls all the processes of the trading robot around the clock. After investing, you will observe the growth of your capital in real time",
   },
   {
     image: supportImage,
@@ -79,27 +86,27 @@ const supports = [
 
 const testimonials = [
   {
-    image: testimonialImage,
+    image: testimonialImage1,
     text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
   },
   {
-    image: testimonialImage,
+    image: testimonialImage2,
     text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
   },
   {
-    image: testimonialImage,
+    image: testimonialImage3,
     text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
   },
   {
-    image: testimonialImage,
+    image: testimonialImage4,
     text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
   },
   {
-    image: testimonialImage,
+    image: testimonialImage5,
     text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
   },
   {
-    image: testimonialImage,
+    image: testimonialImage6,
     text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
   },
 ];
@@ -116,9 +123,8 @@ function Home() {
             <title>Home - Digitalizecrypto</title>
             <link rel="canonical" href="http://digitalizecrypto.com/home" />
         </Helmet>
-      <div class="homepage-section-fx"></div>
-      <div class="homepage-hero-section flex items-center">
-        <div className="write-up w-[639px] px-5 md:pl-[100px] flex flex-col gap-10">
+      <div class="homepage-hero-section flex items-center mb-100">
+        <div className="write-up w-[639px] px-[10px] md:pl-[100px] flex flex-col gap-10">
           <h1 className="heading">SAFE INVESTMENT WITH DIGITALIZE CRYPTO</h1>
           <p className="uppercase text-3xl">
             <span className="marker bg-white p-1 font-semibold rounded-lg">
@@ -136,7 +142,7 @@ function Home() {
       </div>
       <div className="homepage-section-fx two"></div>
       <div className="homepage-section-one md:px-[100px]">
-        <div className="sub flex flex-col md:flex-row gap-10 md:gap-20 py-14 px-3 md:rounded-2xl md:px-20 lg:gap-28 items-center">
+        <div className="sub flex flex-col md:flex-row gap-10 md:gap-20 py-14 px-[10px] md:rounded-2xl md:px-20 lg:gap-28 items-center">
           <div className="left flex justify-center md:justify-end">
             <img
               src={require("../img/threed_logo.png")}
@@ -162,10 +168,10 @@ function Home() {
         </div>
       </div>
       <div className="homepage-section-two p-3 sm:p-[100px]">
-        <div className="sub">
+        <div className="sub px-[10px]">
           <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl font-bold text-center">
+            <h1 className="uppercase text-2xl font-bold text-center sm:text-xl">
               Investment Proposals
             </h1>
             <div class="line"></div>
@@ -181,15 +187,15 @@ function Home() {
         <div></div>
       </div>
 
-      <div>
+      <div> 
         <GeneralCommission />
       </div>
 
       <div className="homepage-section-two ">
-        <div className="sub">
+        <div className="sub px-[10px]">
           <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl font-bold text-center">
+            <h1 className="uppercase text-2xl sm:text-xl font-bold text-center">
               Live Testimonials
             </h1>
             <div class="line"></div>
@@ -218,7 +224,7 @@ function Home() {
           <p className="uppercase font-bold text-center">Bitcoin Price</p>
           <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl text-center font-bold">
+            <h1 className="uppercase text-2xl sm:text-xl text-center font-bold">
               Market Analysis
             </h1>
             <div class="line"></div>
@@ -241,7 +247,7 @@ function Home() {
           <div>
             <div className="headline flex justify-center gap-2 items-center">
               <div class="line"></div>
-              <h1 className="uppercase text-2xl font-bold text-center">
+              <h1 className="uppercase text-2xl  sm:text-xl font-bold text-center">
                 Payment systems
               </h1>
               <div class="line"></div>
@@ -268,9 +274,12 @@ function Home() {
           </div>
 
           <div className="flex justify-center">
-            <button className="w-60 bg-primary-blue border border-solid border-primary-blue rounded-lg py-2 text-white hover:bg-transparent hover:text-primary-blue">
-              Invest
-            </button>
+          <Link to="/register">
+                <button className="btn">
+                  <p>Invest</p>
+                </button>
+            </Link>
+          
           </div>
         </div>
       </section>

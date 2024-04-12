@@ -1,7 +1,7 @@
 const GeneralCommission = () => {
   return (
-    <div className="homepage-section-three md:px-[100px]">
-      <div className="sub md:rounded-xl">
+    <div className="homepage-section-three  md:px-[100px] ">
+      <div className="sub md:rounded-xl px-[10px]">
         <div className="write-up tab p-3 sm:p-10">
           <h1 className="sub-heading">GENERAL COMMISION</h1>
           <p className="text-justify">
@@ -28,7 +28,7 @@ const GeneralCommission = () => {
           </p>
         </div>
       </div>
-      <div className="w-full my-5 max-md:px-3">
+      <div className="w-full my-5 max-md:px-3 ">
         <div className="border border-solid border-black rounded-lg p-5 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <label htmlFor="plan">Choose plan</label>

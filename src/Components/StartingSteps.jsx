@@ -1,4 +1,6 @@
 import stepsImage from "../img/steps-img.png";
+import stepsImage2 from "../img/steps.png";
+
 
 const steps = [
   {
@@ -27,12 +29,12 @@ const StartingSteps = () => {
           <div class="line"></div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-20 mt-10">
+        <div className="flex flex-col md:flex-row items-center gap-10 mt-10">
           <div className="w-full">
             <img
-              src={stepsImage}
+              src={stepsImage2}
               alt="the three steps for starting"
-              className="w-[568px]"
+              className="w-[10/12]"
             />
           </div>
 

@@ -1115,6 +1115,7 @@ label {
 @media screen and (max-width: 992px) {
   .nav {
     padding-inline: 0px;
+    height: 60px;
   }
   .nav .sub {
     width: 95%;
@@ -1229,6 +1230,12 @@ label {
     
     padding-inline: 20px;
     
+  }
+  .line {
+    width: 200px;
+    height: 3px;
+    background: var(--bg_color_2);
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
