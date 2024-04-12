@@ -5,25 +5,15 @@ const GeneralCommission = () => {
         <div className="write-up tab p-3 sm:p-10">
           <h1 className="sub-heading">GENERAL COMMISION</h1>
           <p className="text-justify">
-            Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac
-            etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas
-            donec mauris ipsum vitae lorem non semper. Quam urna felis massa
-            nisl eget neque auctor sit. Volutpat fermentum arcu lorem tortor
-            vitae morbi. Sit viverra aliquet
+            These commissions are charged by cryptoinvest for the platform to work. They are not related to the profit received by our investors
             <br></br>
             <br></br>
             <br></br>
             <li className="text-justify">
-              COMPANY COMMISSION: curabitur egestas donec mauris ipsum vitae
-              lorem non semper. Quam urna felis massa nisl eget neque auctor
-              sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit viverra
-              aliquet
+              COMPANY COMMISSION: 0.5% from the received profit by the robot. This commission shows the earnings of the entire cryptoinvest structure, namely, each employee.
             </li>
             <li className="text-justify">
-              ADMINISTRATIVE COMMISION: curabitur egestas donec mauris ipsum
-              vitae lorem non semper. Quam urna felis massa nisl eget neque
-              auctor sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit
-              viverra aliquet
+              ADMINISTRATIVE COMMISION: 0.5% for technical support of the robot and the company as a whole. This commission includes the development and marketing costs of the company.
             </li>
           </p>
         </div>

@@ -82,8 +82,8 @@ function Footer() {
   if (withouNavbarRoutes.some((item) => pathname.includes(item))) return null;
 
   return (
-    <div className="footer border-t border-solid border-primary-blue px-3 sm:px-[100px] py-20">
-      <div className="flex flex-wrap justify-between gap-10">
+    <div className="footer border-t border-solid border-primary-blue px-3 sm:px-[100px] py-20 ">
+      <div className="flex flex-wrap justify-between gap-10 px-[20px]">
         <div>
           <h1 className="font-medium text-lg text-primary-blue">
             Useful Links

@@ -8,39 +8,39 @@ import { ScrollToTop } from '../scripts/all_scripts';
 
 const faqs = [
   {
-    question: "What is DIGITALIZECRYOTO?",
+    question: "What is cryptocurrency?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Dui suspendisse nisl egestas neque amet risus vestibulum dolor. Vivamus consequat aliquam erat gravida mauris ultrices condimentum. At varius gravida interdum quis in sollicitudin interdum. Pharetra egestas nibh facilisi molestie. Augue faucibus elementum morbi lorem enim. Nulla interdum mattis quam id volutpat potenti consequat cum parturient. Volutpat malesuada est bibendum suspendisse in in nunc pellentesque ultrices. Blandit ut.",
+      "Cryptocurrency is a digital form of money secured by cryptography. Unlike traditional currencies, it's not controlled by a central bank.",
   },
   {
-    question: "What is DIGITALIZECRYOTO?",
+    question: "How do I start investing in cryptocurrency?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Dui suspendisse nisl egestas neque amet risus vestibulum dolor. Vivamus consequat aliquam erat gravida mauris ultrices condimentum. At varius gravida interdum quis in sollicitudin interdum. Pharetra egestas nibh facilisi molestie. Augue faucibus elementum morbi lorem enim. Nulla interdum mattis quam id volutpat potenti consequat cum parturient. Volutpat malesuada est bibendum suspendisse in in nunc pellentesque ultrices. Blandit ut.",
+      "You can invest in cryptocurrency by opening an account with a crypto exchange. DigitalizeCrypto offers a secure platform to buy and sell various cryptocurrencies.",
   },
   {
-    question: "What is DIGITALIZECRYOTO?",
+    question: "What are the different types of cryptocurrency?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Dui suspendisse nisl egestas neque amet risus vestibulum dolor. Vivamus consequat aliquam erat gravida mauris ultrices condimentum. At varius gravida interdum quis in sollicitudin interdum. Pharetra egestas nibh facilisi molestie. Augue faucibus elementum morbi lorem enim. Nulla interdum mattis quam id volutpat potenti consequat cum parturient. Volutpat malesuada est bibendum suspendisse in in nunc pellentesque ultrices. Blandit ut.",
+      "Bitcoin is the most well-known cryptocurrency, but there are thousands of others, each with unique features and purposes. Explore different options on DigitalizeCrypto to find ones that suit your investment goals.",
   },
   {
-    question: "What is DIGITALIZECRYOTO?",
+    question: "What are the benefits of using DigitalizeCrypto?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Dui suspendisse nisl egestas neque amet risus vestibulum dolor. Vivamus consequat aliquam erat gravida mauris ultrices condimentum. At varius gravida interdum quis in sollicitudin interdum. Pharetra egestas nibh facilisi molestie. Augue faucibus elementum morbi lorem enim. Nulla interdum mattis quam id volutpat potenti consequat cum parturient. Volutpat malesuada est bibendum suspendisse in in nunc pellentesque ultrices. Blandit ut.",
+      "DigitalizeCrypto provides a user-friendly platform for buying, selling, and managing your cryptocurrency portfolio. We offer competitive fees and prioritize security.",
   },
   {
-    question: "What is DIGITALIZECRYOTO?",
+    question: "Where can I learn more about cryptocurrency?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Dui suspendisse nisl egestas neque amet risus vestibulum dolor. Vivamus consequat aliquam erat gravida mauris ultrices condimentum. At varius gravida interdum quis in sollicitudin interdum. Pharetra egestas nibh facilisi molestie. Augue faucibus elementum morbi lorem enim. Nulla interdum mattis quam id volutpat potenti consequat cum parturient. Volutpat malesuada est bibendum suspendisse in in nunc pellentesque ultrices. Blandit ut.",
+      "DigitalizeCrypto offers educational resources to help you understand the cryptocurrency market. You can also find a wealth of information online through reputable sources.",
   },
   {
-    question: "What is DIGITALIZECRYOTO?",
+    question: "What are some security risks to be aware of when investing in cryptocurrency?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Dui suspendisse nisl egestas neque amet risus vestibulum dolor. Vivamus consequat aliquam erat gravida mauris ultrices condimentum. At varius gravida interdum quis in sollicitudin interdum. Pharetra egestas nibh facilisi molestie. Augue faucibus elementum morbi lorem enim. Nulla interdum mattis quam id volutpat potenti consequat cum parturient. Volutpat malesuada est bibendum suspendisse in in nunc pellentesque ultrices. Blandit ut.",
+      "Cryptocurrency exchanges and wallets can be targets for hackers. Be cautious of phishing scams and only use reputable platforms like DigitalizeCrypto.",
   },
   {
-    question: "What is DIGITALIZECRYOTO?",
+    question: "How can I diversify my cryptocurrency portfolio?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Dui suspendisse nisl egestas neque amet risus vestibulum dolor. Vivamus consequat aliquam erat gravida mauris ultrices condimentum. At varius gravida interdum quis in sollicitudin interdum. Pharetra egestas nibh facilisi molestie. Augue faucibus elementum morbi lorem enim. Nulla interdum mattis quam id volutpat potenti consequat cum parturient. Volutpat malesuada est bibendum suspendisse in in nunc pellentesque ultrices. Blandit ut.",
+      "Don't put all your eggs in one basket. Invest in a variety of cryptocurrencies with different purposes to spread your risk. DigitalizeCrypto offers a wide range of options.",
   },
 ];
 

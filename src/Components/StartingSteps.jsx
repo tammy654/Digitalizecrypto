@@ -21,7 +21,7 @@ const StartingSteps = () => {
   return (
     <section>
       <div className="px-5 sm:px-[100px]">
-        <div className="headline flex justify-center gap-2 items-center">
+        <div className="headline flex justify-center gap-2 items-center px-[20px]">
           <div class="line"></div>
           <h1 className="uppercase text-2xl font-bold text-center">
             3 steps to start
@@ -29,7 +29,7 @@ const StartingSteps = () => {
           <div class="line"></div>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-10 mt-10">
+        <div className="flex flex-col md:flex-row items-center gap-10 mt-10 px-[20px]">
           <div className="w-full">
             <img
               src={stepsImage2}

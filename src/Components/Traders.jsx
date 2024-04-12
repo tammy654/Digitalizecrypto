@@ -3,7 +3,7 @@ import SupportCard from "./SupportCard";
 const Traders = ({ supports }) => {
   return (
     <section>
-      <div>
+      <div className="px-[20px]">
         <div className="headline flex justify-center gap-2 items-center px-3">
           <div class="line"></div>
           <h1 className="uppercase text-2xl font-bold text-center">

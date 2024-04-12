@@ -87,27 +87,27 @@ const supports = [
 const testimonials = [
   {
     image: testimonialImage1,
-    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+    text: "DigitalizeCrypto has been a game-changer for me. Their platform is easy to use and their educational resources helped me understand the crypto market before I invested a dime. Now, I'm seeing real returns",
   },
   {
     image: testimonialImage2,
-    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+    text: "I was skeptical about crypto at first, but DigitalizeCrypto convinced me to give it a try. Their customer support is fantastic and they're always there to answer my questions. I feel confident about my crypto investments now.",
   },
   {
     image: testimonialImage3,
-    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+    text: "DigitalizeCrypto is the perfect platform for beginners like me. They offer a variety of investment options, so I can find something that fits my risk tolerance. Plus, their fees are very reasonable",
   },
   {
     image: testimonialImage4,
-    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+    text: "I've been using DigitalizeCrypto for a while now and I'm really impressed. Their platform is constantly evolving and they're always adding new features. I highly recommend them to anyone who's interested in investing in crypto.",
   },
   {
     image: testimonialImage5,
-    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+    text: "DigitalizeCrypto has made it easy for me to diversify my portfolio and get exposure to the crypto market. Their security features are top-notch and I never have to worry about my investments being safe.",
   },
   {
     image: testimonialImage6,
-    text: "Digitalizecryoto sit amet consectetur. Diam metus lacus dui hac etiam metus ",
+    text: "Thanks to DigitalizeCrypto, I'm finally in control of my financial future. They've given me the tools and knowledge I need to make smart investment decisions. I can't recommend them enough! ",
   },
 ];
 function Home() {
@@ -123,11 +123,11 @@ function Home() {
             <title>Home - Digitalizecrypto</title>
             <link rel="canonical" href="http://digitalizecrypto.com/home" />
         </Helmet>
-      <div class="homepage-hero-section flex items-center mb-100">
+      <div class="homepage-hero-section flex items-center mb-100 px-[20px]">
         <div className="write-up w-[639px] px-[10px] md:pl-[100px] flex flex-col gap-10">
           <h1 className="heading">SAFE INVESTMENT WITH DIGITALIZE CRYPTO</h1>
-          <p className="uppercase text-3xl">
-            <span className="marker bg-white p-1 font-semibold rounded-lg">
+          <p className="uppercase text-3xl sm:text-2xl">
+            <span className="marker-w p-1 font-semibold rounded-lg">
               {" "}
               get
             </span>{" "}
@@ -141,8 +141,8 @@ function Home() {
         </div>
       </div>
       <div className="homepage-section-fx two"></div>
-      <div className="homepage-section-one md:px-[100px]">
-        <div className="sub flex flex-col md:flex-row gap-10 md:gap-20 py-14 px-[10px] md:rounded-2xl md:px-20 lg:gap-28 items-center">
+      <div className="homepage-section-one md:px-[100px] sm:px-[50px]">
+        <div className="sub flex flex-col md:flex-row gap-10 md:gap-20 py-14 px-[20px] md:rounded-2xl md:px-20 lg:gap-28 items-center">
           <div className="left flex justify-center md:justify-end">
             <img
               src={require("../img/threed_logo.png")}
@@ -168,10 +168,10 @@ function Home() {
         </div>
       </div>
       <div className="homepage-section-two p-3 sm:p-[100px]">
-        <div className="sub px-[10px]">
-          <div className="headline flex justify-center gap-2 items-center px-3">
+        <div className="sub px-[20px]">
+          <div className=" flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl font-bold text-center sm:text-xl">
+            <h1 className="uppercase text-2xl font-bold text-center ">
               Investment Proposals
             </h1>
             <div class="line"></div>
@@ -192,10 +192,10 @@ function Home() {
       </div>
 
       <div className="homepage-section-two ">
-        <div className="sub px-[10px]">
-          <div className="headline flex justify-center gap-2 items-center px-3">
+        <div className="sub px-[20px]">
+          <div className="flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl sm:text-xl font-bold text-center">
+            <h1 className="uppercase text-2xl  font-bold text-center">
               Live Testimonials
             </h1>
             <div class="line"></div>
@@ -211,7 +211,7 @@ function Home() {
                     className="w-[293px] h-[213px]"
                   />
                 </div>
-                <p className="text-center text-white">{testimonial.text}</p>
+                <p className="text-center text-white px-[20px]">{testimonial.text}</p>
               </div>
             ))}
           </div>
@@ -222,9 +222,9 @@ function Home() {
       <section>
         <div>
           <p className="uppercase font-bold text-center">Bitcoin Price</p>
-          <div className="headline flex justify-center gap-2 items-center px-3">
+          <div className="flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl sm:text-xl text-center font-bold">
+            <h1 className="uppercase text-2xl  text-center font-bold">
               Market Analysis
             </h1>
             <div class="line"></div>
@@ -245,21 +245,21 @@ function Home() {
       <section className="mb-52">
         <div className="px-3 sm:px-[100px]">
           <div>
-            <div className="headline flex justify-center gap-2 items-center">
+            <div className="headline flex justify-center gap-2 items-center px-[20px]">
               <div class="line"></div>
-              <h1 className="uppercase text-2xl  sm:text-xl font-bold text-center">
+              <h1 className="uppercase text-2xl   font-bold text-center">
                 Payment systems
               </h1>
               <div class="line"></div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center px-[20px]">
               <p className="text-center w-[430px]">
                 Digitalizecryoto supports a big number of payment systems
               </p>
             </div>
           </div>
 
-          <div className="mt-5 flex flex-col md:flex-row items-center gap-20">
+          <div className="mt-5 flex flex-col md:flex-row items-center gap-20 px-[20px]">
             <p className="text-justify w-full">
               curabitur egestas donec mauris ipsum vitae lorem non semper. Quam
               urna felis massa nisl eget neque auctor sit. Volutpat fermentum
