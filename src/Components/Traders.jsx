@@ -3,7 +3,7 @@ import SupportCard from "./SupportCard";
 const Traders = ({ supports }) => {
   return (
     <section>
-      <div>
+      <div className="px-[20px]">
         <div className="headline flex justify-center gap-2 items-center px-3">
           <div class="line"></div>
           <h1 className="uppercase text-2xl gradient-text font-bold text-center">
@@ -12,9 +12,11 @@ const Traders = ({ supports }) => {
           <div class="line"></div>
         </div>
         <div className="flex justify-center">
-          <p className="w-[230px] gradient-text text-lg text-center">
-            Digitalizecryoto employees ensure that every investor in our company
-            can earn money
+          <p className="w-[530px] gradient-text text-lg text-center">
+            The best cryptocurrency developers works in our company. They have a
+            wealth of experience and understanding of the crypto market behind
+            them. They brought Digitalizecrypto to the world level of
+            development.
           </p>
         </div>
 
@@ -29,7 +31,7 @@ const Traders = ({ supports }) => {
         </div>
 
         <div className="flex justify-center">
-          <button className="px-10 py-2 rounded-lg duration-300 text-white bg-primary-blue border border-solid border-primary-blue hover:bg-transparent hover:text-primary-blue">
+          <button className="btn px-10 py-2 rounded-lg duration-300 text-white bg-primary-blue border border-solid border-primary-blue hover:bg-transparent hover:text-primary-blue">
             Invest with us and get stable income
           </button>
         </div>

@@ -154,12 +154,11 @@ function Header() {
             </a>
           </li>
           <div className="click">
-            <Link to="/register"
-            onClick={menuDropClose}
-            >
-              <button className="btn">
-                <p>Registration</p>
-              </button>
+              <Link to="/register"
+              onClick={menuDropClose}>
+                <button className="btn">
+                  <p>Registration</p>
+                </button>
             </Link>
             <Link to="/signin"
             onClick={menuDropClose}
