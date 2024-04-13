@@ -16,17 +16,71 @@
   display: none;
 }
 
+.ab_bg {
+  background-color: #061940;
+}
+
+.tp_bg {
+  background-color: #303f60;
+}
+
+.trb_bg {
+  background-color: #596680;
+}
+
+.tb_bg {
+  background-color: #828c9f;
+}
+
+.tip_bg {
+  background-color: #acb2bf;
+}
+
+.td_bg {
+  background-color: #177a91;
+}
+
+.taip_bg {
+  background-color: #afa90f;
+}
+
+.tw_bg {
+  background-color: #1d98b5;
+}
+
 .login_screen {
   height: 100svh;
   width: 100%;
+}
+
+.screen_height {
+  height: 100svh;
+}
+
+.dashboard_header {
+  border-right: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: var(--gray-shade-1);
 }
 
 .active {
   color: var(--active-blue);
 }
 
+.gradient-text {
+  background-image: linear-gradient(
+    to bottom,
+    #061940,
+    #294e9a
+  ); /* Your gradient colors */
+  -webkit-background-clip: text; /* Clip the text */
+  background-clip: text;
+  color: transparent; /* Hide the original text color */
+}
+
 .linear_color {
-  color: var(--bg_color_2);
+  color: linear-gradient(to bottom, #061940, #294e9a);
 }
 
 .linear_bg {

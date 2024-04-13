@@ -7,7 +7,7 @@ import Faq from "../Pages/Faq";
 import Statistics from "../Pages/Statistics";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
-import Dashboard from '../Pages/Dashboard';
+import Dashboard from "../Pages/Dashboard";
 import { AnimatePresence } from "framer-motion";
 
 function AnimatedRoutes() {
@@ -22,7 +22,7 @@ function AnimatedRoutes() {
         <Route path="/statistics" element={<Statistics />} />;
         <Route path="/signin" element={<Login />} />;
         <Route path="/register" element={<Register />} />;
-        <Route path="/dashboard/*" element={<Dashboard />}/>
+        <Route path="/dashboard/*" element={<Dashboard />} />
       </Routes>
     </AnimatePresence>
   );

@@ -18,7 +18,7 @@ const steps = [
 const StartingSteps = () => {
   return (
     <section>
-      <div className="px-5 sm:px-[100px]">
+      <div className="pl-7 pr-5 sm:px-[100px]">
         <div className="headline flex justify-center gap-2 items-center">
           <div class="line"></div>
           <h1 className="uppercase text-2xl font-bold text-center">

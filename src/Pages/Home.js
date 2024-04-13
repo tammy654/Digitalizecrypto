@@ -8,8 +8,8 @@ import Traders from "../Components/Traders";
 
 import { Helmet } from "react-helmet";
 import { Outlet, Link } from "react-router-dom";
-import {motion} from "framer-motion"
-import { ScrollToTop } from '../scripts/all_scripts';
+import { motion } from "framer-motion";
+import { ScrollToTop } from "../scripts/all_scripts";
 
 const proposals = [
   {
@@ -105,17 +105,24 @@ const testimonials = [
 ];
 function Home() {
   return (
-    <motion.div 
-    initial={{width: 0, opacity: 0}}
-    animate={{width: "100%", opacity: 1}}
-    exit={{ x: window.innerWidth, transition: {
-    duration: 0.1, delay: 0}, opacity: 0}} > 
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{
+        x: window.innerWidth,
+        transition: {
+          duration: 0.1,
+          delay: 0,
+        },
+        opacity: 0,
+      }}
+    >
       <ScrollToTop />
-        <Helmet>
-            <meta charSet="utf-8" />
-            <title>Home - Digitalizecrypto</title>
-            <link rel="canonical" href="http://digitalizecrypto.com/home" />
-        </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home - Digitalizecrypto</title>
+        <link rel="canonical" href="http://digitalizecrypto.com/home" />
+      </Helmet>
       <div class="homepage-section-fx"></div>
       <div class="homepage-hero-section flex items-center">
         <div className="write-up w-[639px] px-5 md:pl-[100px] flex flex-col gap-10">
@@ -129,9 +136,9 @@ function Home() {
           </p>
           <button className="btn3">
             <Link to="/register" className="hover:text-primary-blue">
-            Open Account
+              Open Account
             </Link>
-            </button>
+          </button>
         </div>
       </div>
       <div className="homepage-section-fx two"></div>
@@ -165,7 +172,7 @@ function Home() {
         <div className="sub">
           <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl font-bold text-center">
+            <h1 className="uppercase text-2xl gradient-text font-bold text-center">
               Investment Proposals
             </h1>
             <div class="line"></div>
@@ -187,17 +194,20 @@ function Home() {
 
       <div className="homepage-section-two ">
         <div className="sub">
-          <div className="headline flex justify-center gap-2 items-center px-3">
+          <div className="headline flex justify-center gap-2 items-center px-5">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl font-bold text-center">
+            <h1 className="uppercase gradient-text text-2xl font-bold text-center">
               Live Testimonials
             </h1>
             <div class="line"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-3 sm:px-[100px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-5 sm:px-[100px]">
             {testimonials.map((testimonial, index) => (
-              <div className="bg-primary-blue rounded-lg flex flex-col gap-5 items-center justify-center px-3 py-10">
+              <div
+                key={index}
+                className="linear_bg rounded-lg flex flex-col gap-5 items-center justify-center px-5 py-10"
+              >
                 <div className="flex justify-center ">
                   <img
                     src={testimonial.image}
@@ -215,10 +225,12 @@ function Home() {
 
       <section>
         <div>
-          <p className="uppercase font-bold text-center">Bitcoin Price</p>
+          <p className="uppercase font-bold text-center gradient-text">
+            Bitcoin Price
+          </p>
           <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl text-center font-bold">
+            <h1 className="uppercase text-2xl text-center gradient-text font-bold">
               Market Analysis
             </h1>
             <div class="line"></div>
@@ -268,14 +280,13 @@ function Home() {
           </div>
 
           <div className="flex justify-center">
-            <button className="w-60 bg-primary-blue border border-solid border-primary-blue rounded-lg py-2 text-white hover:bg-transparent hover:text-primary-blue">
+            <button className="w-60 linear_bg border border-solid border-primary-blue rounded-lg py-2 text-white hover:bg-transparent hover:text-primary-blue">
               Invest
             </button>
           </div>
         </div>
       </section>
       <Outlet />
-  
     </motion.div>
   );
 }
