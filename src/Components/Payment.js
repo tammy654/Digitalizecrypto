@@ -1,112 +1,94 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
-import {  Outlet, Link } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 import {motion} from "framer-motion";
+
 
 function Payment() {
   return (
-    <motion.div  
-    initial={{width: "0",  opacity: 0}}
+<motion.div 
+    initial={{width: "0",  opacity: 0}} 
     animate={{width: "100%", opacity: 1}}
     exit={{ transition: {type: "spring", 
-    duration: .5, delay: 0}}} > 
+    duration: .5, delay: 0}}}> 
         <Helmet>
             <meta charSet="utf-8" />
-            <title>payment - Oracle Trading</title>
-            <link rel="canonical" href="http://oracletrading.com/payment" />
+            <title>Dashboard/invest/payment - Digitalizecrpyto.com</title>
+            <link rel="canonical" href="http://digitalizecrpyto.com/Dashboard/invest/payment" />
         </Helmet>
-        <div class="payment  w3-col l12 m12 s12"> 
+        <div class="payment  w3-col l12 m12 s12">     
             <div class="sub">
                 <div class="dashboard">
                     <h1 class="title">Make Payment</h1>
                     <div class="dp">
-                        <img class="image" src={ require ("../img/dp.jpg")} alt="oracle_trading_logo" />
-                        <p>majorsignature</p>
+                        <img class="image" src={ require ("../img/dp.jpg")} alt="profile-dp" />
+                        <p>John Doe</p>
                     </div>
                 </div>
-                <h1 class="sub-title w3-hide-large">CHAMPIONS PLANS SUCSCRIPTION</h1>
+               
                 <div class="account-tab">
-                        <div class="tag a w3-col l5 m5 s12">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                            <mask id="mask0_337_1761" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
-                                <rect width="100" height="100" fill="#D9D9D9"/>
-                            </mask>
-                            <g mask="url(#mask0_337_1761)">
-                                <path d="M50.0007 87.5L8.33398 37.5L20.834 12.5H79.1673L91.6673 37.5L50.0007 87.5ZM40.1048 
-                                33.3333H59.8965L53.6465 20.8333H46.3548L40.1048 33.3333ZM45.834 69.4792V41.6667H22.709L45.834 
-                                69.4792ZM54.1673 69.4792L77.2923 41.6667H54.1673V69.4792ZM69.1673 33.3333H80.209L73.959 
-                                20.8333H62.9173L69.1673 33.3333ZM19.7923 33.3333H30.834L37.084 20.8333H26.0423L19.7923 33.3333Z" />
-                            </g>
-                            </svg> 
-                            <h1 class="sub-title"> ONE MONTH</h1>
-                            <Link to="/dashboard/payment-platform" id="platform">
-                                <button class="btn">Subscribe</button>
-                            </Link>
+                    
+                    <div class="tag a">
+                        <div class="content">
+                            <div class="tier w3-col l4 m4 s6">
+                                <h1 class="details">CRYPTO PAYMENT</h1>
+                            </div>
+                            <div class="tier w3-col l4 m4 s6">
+                                <h1 class="details">CRYPTO: BTC</h1>
+                            </div>
+                            <div class="tier w3-col l4 m4 s6">
+                                <h1 class="details">AMOUNT: $XXXX</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="sub-title">ALL PAYMENT METHOD AVAILABLE</h1>
+                    <li class="details">Not your country? Change Country</li>
+                    <div class="tag b">
+                        <div class="content">
+                            <div class="left w3-col l6 m6 s6">
+                                <h1 class="details">PAY WITH YOUR BANK OR ATM CARD</h1>
+                                <div class="write-up">
+                                    <img src={ require ("../img/paymentgateway.png")} alt="ATM PAYMENT" />
+                                    <p class="details">YOUR ACCOUNT WILL BE FUNDED AUTOMATICALLY AFTER SUCCESSFUL TRANSACTION</p>
+                                    <button class="btn">Pay $XXXX</button>
+                                </div>
+                            </div>
+                    
+                            <div class="right w3-col l6 m6 s6">
+                                <h1 class="details">BANK PAYMENT/MOBILE TRANSFER</h1>
+                                <div class="write-up">
+                                    <img src={ require ("../img/bank_transfer.jpg")} alt="ATM PAYMENT" />
+                                    <p class="details">
+                                        <span class="bold">Account Name:</span>       <span class="marker2">John Doe</span> <br/>
+                                        <span class="bold">Account Number:</span>     <span class="marker2">123xxxxxx</span>  <br/>
+                                        <span class="bold">Bank Name:</span>          <span class="marker2">XXXX Bank</span>  <br/><br/> 
+                                        After Successful transaction, Kindly Forward us a mail containing “Your Digitalizecrpyto Account Email, 
+                                        Account Number, Account Name and Amount Paid, to contact@digitalizecrpyto.com or 
+                                        through WhatsApp to +XXX-XXX-XXX-XXXX <br/><br/>
+                                        <br/><br/>
+                                        Your account will be funded once we receive your payment.
+                                    </p>
+                                </div>
+                            </div>
                             
                         </div>
-                        <div class="tag a w3-col l5 m5 s12">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                            <mask id="mask0_337_1761" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
-                                <rect width="100" height="100" fill="#D9D9D9"/>
-                            </mask>
-                            <g mask="url(#mask0_337_1761)">
-                                <path d="M50.0007 87.5L8.33398 37.5L20.834 12.5H79.1673L91.6673 37.5L50.0007 87.5ZM40.1048 
-                                33.3333H59.8965L53.6465 20.8333H46.3548L40.1048 33.3333ZM45.834 69.4792V41.6667H22.709L45.834 
-                                69.4792ZM54.1673 69.4792L77.2923 41.6667H54.1673V69.4792ZM69.1673 33.3333H80.209L73.959 
-                                20.8333H62.9173L69.1673 33.3333ZM19.7923 33.3333H30.834L37.084 20.8333H26.0423L19.7923 33.3333Z" />
-                            </g>
-                            </svg> 
-                            <h1 class="sub-title"> TWO MONTH</h1>
-                            <Link to="/dashboard/payment-platform" id="platform">
-                                <button class="btn">Subscribe</button>
-                            </Link>
-                            
-                        </div>
-                        <div class="tag a w3-col l5 m5 s12">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                            <mask id="mask0_337_1761" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
-                                <rect width="100" height="100" fill="#D9D9D9"/>
-                            </mask>
-                            <g mask="url(#mask0_337_1761)">
-                                <path d="M50.0007 87.5L8.33398 37.5L20.834 12.5H79.1673L91.6673 37.5L50.0007 87.5ZM40.1048 
-                                33.3333H59.8965L53.6465 20.8333H46.3548L40.1048 33.3333ZM45.834 69.4792V41.6667H22.709L45.834 
-                                69.4792ZM54.1673 69.4792L77.2923 41.6667H54.1673V69.4792ZM69.1673 33.3333H80.209L73.959 
-                                20.8333H62.9173L69.1673 33.3333ZM19.7923 33.3333H30.834L37.084 20.8333H26.0423L19.7923 33.3333Z" />
-                            </g>
-                            </svg> 
-                            <h1 class="sub-title"> THREE MONTH</h1>
-                            <Link to="/dashboard/payment-platform" id="platform">
-                                <button class="btn">Subscribe</button>
-                            </Link>
-                            
-                        </div>
-                        <div class="tag a w3-col l5 m5 s12">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                            <mask id="mask0_337_1761" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
-                                <rect width="100" height="100" fill="#D9D9D9"/>
-                            </mask>
-                            <g mask="url(#mask0_337_1761)">
-                                <path d="M50.0007 87.5L8.33398 37.5L20.834 12.5H79.1673L91.6673 37.5L50.0007 87.5ZM40.1048 
-                                33.3333H59.8965L53.6465 20.8333H46.3548L40.1048 33.3333ZM45.834 69.4792V41.6667H22.709L45.834 
-                                69.4792ZM54.1673 69.4792L77.2923 41.6667H54.1673V69.4792ZM69.1673 33.3333H80.209L73.959 
-                                20.8333H62.9173L69.1673 33.3333ZM19.7923 33.3333H30.834L37.084 20.8333H26.0423L19.7923 33.3333Z" />
-                            </g>
-                            </svg> 
-                            <h1 class="sub-title"> FOUR MONTH</h1>
-                            <Link to="/dashboard/payment-platform" id="platform">
-                                <button class="btn">Subscribe</button>
-                            </Link>
-                            
-                        </div>
-                        
-                </div>  
-            </div> 
-                      
+                    </div> 
+            
+                </div>
+                <div class="disclaimer">
+                    <h1 class="details">DISCLAIMER</h1>
+                    <p class="details">
+                        The data conveyed is exclusively intended for individuals or entities above the age of 18. 
+                        [Your Company Name] does not reimburse cash payments made for subscriptions and 
+                        bears no responsibility for any monetary losses or gains. 
+                        You can read through Our Disclaimer for more information on digitalizecrypto.
+                    </p>
+                </div>
+            </div>
         </div>
-       
         <Outlet/>
   
-    </motion.div>
+</motion.div>
   )
 }
 
