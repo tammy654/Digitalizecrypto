@@ -41,7 +41,7 @@ const routes = [
 const investors = [
   {
     name: "Login",
-    link: "/login",
+    link: "/signin",
   },
   {
     name: "Sign up",
@@ -82,8 +82,8 @@ function Footer() {
   if (withouNavbarRoutes.some((item) => pathname.includes(item))) return null;
 
   return (
-    <div className="footer border-t border-solid border-primary-blue px-3 sm:px-[100px] py-20 ">
-      <div className="flex flex-wrap justify-between gap-10 px-[20px]">
+    <div className="footer border-t border-solid border-primary-blue px-3 sm:px-[100px] py-20">
+      <div className="flex flex-wrap-reverse justify-between gap-10">
         <div>
           <h1 className="font-medium text-lg text-primary-blue">
             Useful Links
@@ -124,7 +124,7 @@ function Footer() {
               type="text"
               className="h-full w-full p-2 border border-solid border-primary-blue rounded-lg"
             />
-            <button className="bg-primary-blue border border-solid border-primary-blue text-white hover:bg-transparent hover:text-primary-blue h-full px-5 rounded-lg">
+            <button className="linear_bg border border-solid border-primary-blue text-white hover:bg-transparent hover:text-primary-blue h-full px-5 rounded-lg">
               Subscribe
             </button>
           </div>

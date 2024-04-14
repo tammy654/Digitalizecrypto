@@ -1,7 +1,6 @@
 import stepsImage from "../img/steps-img.png";
 import stepsImage2 from "../img/steps.png";
 
-
 const steps = [
   {
     title: "registration",

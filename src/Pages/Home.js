@@ -15,8 +15,8 @@ import Traders from "../Components/Traders";
 
 import { Helmet } from "react-helmet";
 import { Outlet, Link } from "react-router-dom";
-import {motion} from "framer-motion"
-import { ScrollToTop } from '../scripts/all_scripts';
+import { motion } from "framer-motion";
+import { ScrollToTop } from "../scripts/all_scripts";
 
 const proposals = [
   {
@@ -60,7 +60,7 @@ const supports = [
   {
     image: supportImage2,
     title: "STABLE AND AUTOMATED INVESTMENT",
-    text: "The robot is not human-related. And that is why all investments are reliable and completely safe"
+    text: "The robot is not human-related. And that is why all investments are reliable and completely safe",
   },
   {
     image: supportImage,
@@ -112,32 +112,37 @@ const testimonials = [
 ];
 function Home() {
   return (
-    <motion.div 
-    initial={{width: 0, opacity: 0}}
-    animate={{width: "100%", opacity: 1}}
-    exit={{ x: window.innerWidth, transition: {
-    duration: 0.1, delay: 0}, opacity: 0}} > 
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{
+        x: window.innerWidth,
+        transition: {
+          duration: 0.1,
+          delay: 0,
+        },
+        opacity: 0,
+      }}
+    >
       <ScrollToTop />
-        <Helmet>
-            <meta charSet="utf-8" />
-            <title>Home - Digitalizecrypto</title>
-            <link rel="canonical" href="http://digitalizecrypto.com/home" />
-        </Helmet>
-      <div class="homepage-hero-section flex items-center mb-100 px-[20px]">
-        <div className="write-up w-[639px] px-[10px] md:pl-[100px] flex flex-col gap-10">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Home - Digitalizecrypto</title>
+        <link rel="canonical" href="http://digitalizecrypto.com/home" />
+      </Helmet>
+      <div class="homepage-section-fx"></div>
+      <div class="homepage-hero-section flex items-center">
+        <div className="write-up w-[639px] px-5 md:pl-[100px] flex flex-col gap-10">
           <h1 className="heading">SAFE INVESTMENT WITH DIGITALIZE CRYPTO</h1>
           <p className="uppercase text-3xl sm:text-2xl">
-            <span className="marker-w p-1 font-semibold rounded-lg">
-              {" "}
-              get
-            </span>{" "}
+            <span className="marker-w p-1 font-semibold rounded-lg"> get</span>{" "}
             a lifetime on investments.
           </p>
           <button className="btn3">
             <Link to="/register" className="hover:text-primary-blue">
-            Open Account
+              Open Account
             </Link>
-            </button>
+          </button>
         </div>
       </div>
       <div className="homepage-section-fx two"></div>
@@ -171,7 +176,7 @@ function Home() {
         <div className="sub px-[20px]">
           <div className=" flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl font-bold text-center ">
+            <h1 className="uppercase text-2xl gradient-text font-bold text-center">
               Investment Proposals
             </h1>
             <div class="line"></div>
@@ -187,23 +192,26 @@ function Home() {
         <div></div>
       </div>
 
-      <div> 
+      <div>
         <GeneralCommission />
       </div>
 
       <div className="homepage-section-two ">
         <div className="sub px-[20px]">
-          <div className="flex justify-center gap-2 items-center px-3">
+          <div className="flex justify-center gap-2 items-center px-5">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl  font-bold text-center">
+            <h1 className="uppercase gradient-text text-2xl font-bold text-center">
               Live Testimonials
             </h1>
             <div class="line"></div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-3 sm:px-[100px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-5 sm:px-[100px]">
             {testimonials.map((testimonial, index) => (
-              <div className="bg-primary-blue rounded-lg flex flex-col gap-5 items-center justify-center px-3 py-10">
+              <div
+                key={index}
+                className="linear_bg rounded-lg flex flex-col gap-5 items-center justify-center px-5 py-10"
+              >
                 <div className="flex justify-center ">
                   <img
                     src={testimonial.image}
@@ -211,7 +219,9 @@ function Home() {
                     className="w-[293px] h-[213px]"
                   />
                 </div>
-                <p className="text-center text-white px-[20px]">{testimonial.text}</p>
+                <p className="text-center text-white px-[20px]">
+                  {testimonial.text}
+                </p>
               </div>
             ))}
           </div>
@@ -221,10 +231,12 @@ function Home() {
 
       <section>
         <div>
-          <p className="uppercase font-bold text-center">Bitcoin Price</p>
-          <div className="flex justify-center gap-2 items-center px-3">
+          <p className="uppercase font-bold text-center gradient-text">
+            Bitcoin Price
+          </p>
+          <div className="headline flex justify-center gap-2 items-center px-3">
             <div class="line"></div>
-            <h1 className="uppercase text-2xl  text-center font-bold">
+            <h1 className="uppercase text-2xl text-center gradient-text font-bold">
               Market Analysis
             </h1>
             <div class="line"></div>
@@ -274,17 +286,15 @@ function Home() {
           </div>
 
           <div className="flex justify-center">
-          <Link to="/register">
-                <button className="btn">
-                  <p>Invest</p>
-                </button>
+            <Link to="/register">
+              <button className="w-60 linear_bg border border-solid border-primary-blue rounded-lg py-2 text-white hover:bg-transparent hover:text-primary-blue">
+                <p>Invest</p>
+              </button>
             </Link>
-          
           </div>
         </div>
       </section>
       <Outlet />
-  
     </motion.div>
   );
 }
