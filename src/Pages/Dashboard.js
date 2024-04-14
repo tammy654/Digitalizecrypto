@@ -135,7 +135,7 @@ export default function Dashboard({ children }) {
                   <NavItem navSize={navSize} icon={MdLogout} title="Logout" />
                 </NavLink>
 
-                <div className="h-full w-full overflow-y-scroll">
+                <div className="max-h-full w-full overflow-y-hidden">
                   <Outlet />
                 </div>
               </Flex>
