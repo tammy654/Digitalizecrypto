@@ -7,16 +7,18 @@ import { ScrollToTop } from "../scripts/all_scripts";
 import { Routes, Route, Outlet, NavLink, useLocation } from "react-router-dom";
 
 import Profile from "../Components/Profile";
-import Payment from "../Components/Payment";
-import Platform from "../Components/PaymentPlatform";
-import Trade from "../Components/Trade";
+import Invest from "../Components/Invest";
+import Referral from "../Components/Referral";
+import HelpDesk from "../Components/HelpDesk";
+import Transaction from "../Components/Transaction";
 import NavItem from "../Components/NavItem";
 
-import { MdPayment, MdLogout } from "react-icons/md";
-import { LuSettings } from "react-icons/lu";
-import { BsArrowsAngleContract } from "react-icons/bs";
+import { MdLogout } from "react-icons/md";
 import { FiMenu, FiHome, FiUser } from "react-icons/fi";
-import Header from "../Components/dashboard/Header";
+import { GrTransaction } from "react-icons/gr";
+import { GiPayMoney } from "react-icons/gi";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { VscReferences } from "react-icons/vsc";
 import Layout from "../Components/dashboard/Layout";
 import DashboardHome from "./DashboardHome";
 
@@ -89,40 +91,53 @@ export default function Dashboard({ children }) {
 
                 <NavLink
                   activeClassName="active"
-                  to="/dashboard/trade"
-                  id="trade"
+                  to="/dashboard/Transaction"
+                  id="Transaction"
                   onClick={sideBarToggle}
                 >
                   <NavItem
                     navSize={navSize}
-                    icon={BsArrowsAngleContract}
-                    title="Trade"
+                    icon={GrTransaction}
+                    title="Transactions"
                   />
                 </NavLink>
 
                 <NavLink
                   activeClassName="active"
-                  to="/dashboard/payment"
+                  to="/dashboard/invest"
                   id="payment"
                   onClick={sideBarToggle}
                 >
                   <NavItem
                     navSize={navSize}
-                    icon={MdPayment}
-                    title="Payments"
+                    icon={GiPayMoney}
+                    title="Invest"
                   />
                 </NavLink>
 
                 <NavLink
                   activeClassName="active"
-                  to="/dashboard/settings"
-                  id="settings"
+                  to="/dashboard/referral"
+                  id="referral"
                   onClick={sideBarToggle}
                 >
                   <NavItem
                     navSize={navSize}
-                    icon={LuSettings}
-                    title="Settings"
+                    icon={VscReferences}
+                    title="Referral"
+                  />
+                </NavLink>
+
+                <NavLink
+                  activeClassName="active"
+                  to="/dashboard/helpdesk"
+                  id="helpdesk"
+                  onClick={sideBarToggle}
+                >
+                  <NavItem
+                    navSize={navSize}
+                    icon={RiCustomerService2Fill}
+                    title="Help Desk"
                   />
                 </NavLink>
 
@@ -145,9 +160,11 @@ export default function Dashboard({ children }) {
             <Routes>
               <Route index element={<DashboardHome />} />
               <Route path="/profile" element={<Profile />} />
-              <Route path="/payment" element={<Payment />} />
-              <Route path="/payment-platform" element={<Platform />} />
-              <Route path="/trade" element={<Trade />} />
+              <Route path="/Transaction" element={<Transaction />} />
+              <Route path="/invest" element={<Invest />} />
+              <Route path="/referral" element={<Referral />} />
+              <Route path="/helpdesk" element={<HelpDesk />} />
+              
             </Routes>
           </AnimatePresence>
         </Flex>

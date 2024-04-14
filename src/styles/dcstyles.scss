@@ -76,6 +76,17 @@ body {
   letter-spacing: 0.25px;
   word-wrap: break-word;
 }
+.title-d {
+  width: 100%;
+  color: var(--dark_color);
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-family: var(--text_font2);
+  font-weight: 900;
+  flex: 1 1 0;
+  text-align: left;
+  letter-spacing: 0.25px;
+  word-wrap: break-word;
+}
 .sub-title {
   width: 100%;
   color: var(--dark_color);
@@ -605,13 +616,13 @@ label {
 .input-error {
   border-color: var(--error-color);
 }
-.profile, .payment, .platform,  .trade{
+.profile, .investment, .platform,  .transaction{
   width: 100%;
   height: auto;
   background-color: white;
  
 }
-.profile .sub, .payment .sub, .platform .sub,  .trade .sub{
+.profile .sub, .investment .sub, .platform .sub,  .transaction .sub{
   width: 97%;
   display: flex;
   height: auto;
@@ -625,14 +636,14 @@ label {
 
  
 }
-.profile .sub .dashboard, .payment .sub .dashboard, .platform .sub .dashboard, .trade .sub .dashboard{
+.profile .sub .dashboard, .investment .sub .dashboard, .platform .sub .dashboard, .transaction .sub .dashboard{
   width: 100%;
   display: flex;
   padding: 10px;
   align-items: center;
   background-color: var(--light-1);
 }
-.profile .sub .dashboard .dp, .payment .sub .dashboard .dp, .platform .sub .dashboard .dp, .trade .sub .dashboard .dp{
+.profile .sub .dashboard .dp, .investment .sub .dashboard .dp, .platform .sub .dashboard .dp, .transaction .sub .dashboard .dp{
   width: fit-content;
   height: 100%;
   display: flex;
@@ -640,7 +651,7 @@ label {
   justify-content: center;
   margin-inline: 30px;
 }
-.profile .sub .dashboard .dp .image, .payment .sub .dashboard .dp .image, .platform .sub .dashboard .dp .image, .trade .sub .dashboard .dp .image{
+.profile .sub .dashboard .dp .image, .investment .sub .dashboard .dp .image, .platform .sub .dashboard .dp .image, .transaction .sub .dashboard .dp .image{
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -769,11 +780,11 @@ label {
 }
 
 
-.payment .sub .dashboard h1{
+.investment .sub .dashboard h1{
   width:auto;
 }
 
-.payment .sub .account-tab{
+.investment .sub .account-tab{
   width: 90%;
   padding-block: 24px;
   align-items: flex-start;
@@ -784,7 +795,7 @@ label {
   flex-wrap: wrap;
  
 }
-.payment .sub .account-tab .tag{
+.investment .sub .account-tab .tag{
   background-color: var(--light-1);
   height: auto;
   display: flex;
@@ -794,19 +805,19 @@ label {
   align-items: center;
   justify-content: center;
 } 
-.payment .sub .account-tab .tag.a svg{
+.investment .sub .account-tab .tag.a svg{
   width:100px;
   height: 100px;
   border-radius: 100px;
   fill: var(--text_color_1);
 }
-.payment .sub .account-tab .tag.a h1{
+.investment .sub .account-tab .tag.a h1{
   font-weight: bolder;
   text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
 }
-.payment .sub .account-tab .tag.a  button{
+.investment .sub .account-tab .tag.a  button{
   width: fit-content;
   height: 40px;
   padding: 24px;
@@ -823,7 +834,7 @@ label {
 }
 
 
-.trade .sub .tab{
+.transaction .sub .tab{
   background-color: var(--light-1);
   width: 100%;
   height: 80%;
@@ -832,7 +843,7 @@ label {
   padding-bottom: 30px;
   padding: 24px;
 }
-.trade .sub .tab .board {
+.transaction .sub .tab .board {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -843,7 +854,7 @@ label {
   flex: 1 0 0;
   min-width: 831px;
 }
-.trade .sub .tab .board  .column{
+.transaction .sub .tab .board  .column{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -851,7 +862,7 @@ label {
   flex: 1 0 0;
  
 }
-.trade .sub .tab .board  .column .caption{
+.transaction .sub .tab .board  .column .caption{
   display: flex;
   padding: 8px;
   height: 10%;
@@ -864,7 +875,7 @@ label {
   color: var(--text_color_2);
   font-size: clamp(1.2rem, 1vw, 1.8rem);
 }
-.trade .sub .tab .board  .column .row{
+.transaction .sub .tab .board  .column .row{
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -874,7 +885,7 @@ label {
   align-self: stretch;
  
 }
-.trade .sub .tab .board  .column .row p{
+.transaction .sub .tab .board  .column .row p{
   text-align: center;
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
@@ -947,7 +958,7 @@ label {
   align-self: stretch;
   flex-wrap: wrap;
 }
-.platform .sub .account-tab .tag.b .content .left, .trade .sub .account-tab .tag.b .content .right{
+.platform .sub .account-tab .tag.b .content .left, .transaction .sub .account-tab .tag.b .content .right{
   
   flex: 1 0 0;
   display: flex;
@@ -1218,10 +1229,10 @@ label {
   .footer .sub .top .info .footerMenu.b .links.aboutus {
     width: 100%;
   }
-  .profile , .payment, .platform, .trade {
+  .profile , .investment, .platform, .transaction {
     padding-left: 0px;
   }
-  .profile .sub .account-tab, .payment .sub .account-tab, .platform .sub .account-tab, .trade .sub .account-tab{
+  .profile .sub .account-tab, .investment .sub .account-tab, .platform .sub .account-tab, .transaction .sub .account-tab{
     width: 100%;
   }
   .profile .sub .account-tab .tag.b .content{
@@ -1237,14 +1248,14 @@ label {
   }
 }
 @media screen and (max-width: 767px) {
-  .profile , .payment, .platform, .trade {
+  .profile , .investment, .platform, .transaction {
     padding-left: 0px;
   }
-  .profile .sub .account-tab, .payment .sub .account-tab, .platform .sub .account-tab, .trade .sub .tab{
+  .profile .sub .account-tab, .investment .sub .account-tab, .platform .sub .account-tab, .transaction .sub .tab{
     width: 100%;
     flex-direction: column;
   }
-  .profile .sub .account-tab .tag,    .payment .sub .account-tab .tag, .platform .sub .account-tab .tag, .trade .sub .tab .tag{
+  .profile .sub .account-tab .tag,    .investment .sub .account-tab .tag, .platform .sub .account-tab .tag, .transaction .sub .tab .tag{
     width: 100%;
   }
   .profile .sub .account-tab .tag.b .content{
