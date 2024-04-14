@@ -14,7 +14,7 @@ function Transaction() {
         <Helmet>
             <meta  charSet="utf-8" />
             <title>Dashboard/Transaction - Digitalizecrpyto</title>
-            <link rel="canonical" href="http://digitalizecrypto.com/Dashboard/payment" />
+            <link rel="canonical" href="http://digitalizecrypto.com/Dashboard/transactions" />
         </Helmet>
         <div class="transaction w3-col l12 m12 s12"> 
             <div class="sub">
@@ -25,7 +25,44 @@ function Transaction() {
                         <p>John Doe</p>
                     </div>
                 </div>
-                
+                <div class="tab">
+                    <div class="board w3-row">
+                            <div class="column s w3-col l1 m6 s6">
+                            <h1 class="caption sub-title">S/N</h1>
+                            <div class="row">
+                                <p class="details">1</p>
+                                <p class="details">2</p>
+                                <p class="details">3</p>
+                            </div>
+                            </div>
+                            <div class="column w3-col l2 m6 s6">
+                            <h1 class="caption sub-title">AMOUNT </h1>
+                            <div class="row">
+                                <p class="details">$890</p>
+                                <p class="details">$1300</p>
+                                <p class="details">$1000</p>
+                            </div>
+                            </div>
+                            <div class="column w3-col l2 m6 s6">
+                            <h1 class="caption sub-title">STATUS</h1>
+                            <div class="row">
+                                <p class="details">Successful</p>
+                                <p class="details">Successful</p>
+                                <p class="details">Unsuccessful</p>
+                            </div>
+                            </div>
+                            
+                            <div class="column w3-col l2 m6 s6">
+                            <h1 class="caption sub-title">DATE</h1>
+                            <div class="row">
+                                <p class="details">07/06/24</p>
+                                <p class="details">16/05/24</p>
+                                <p class="details">05/05/24</p>
+                              
+                            </div>
+                            </div>
+                    </div>
+                </div>
             </div> 
         </div>
        

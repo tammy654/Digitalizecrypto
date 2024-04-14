@@ -10,6 +10,8 @@ import Profile from "../Components/Profile";
 import Invest from "../Components/Invest";
 import Referral from "../Components/Referral";
 import HelpDesk from "../Components/HelpDesk";
+import DashboardHome from "./DashboardHome";
+import Payment from '../Components/Payment';
 import Transaction from "../Components/Transaction";
 import NavItem from "../Components/NavItem";
 
@@ -20,7 +22,7 @@ import { GiPayMoney } from "react-icons/gi";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { VscReferences } from "react-icons/vsc";
 import Layout from "../Components/dashboard/Layout";
-import DashboardHome from "./DashboardHome";
+
 
 export default function Dashboard({ children }) {
   const [navSize, changeNavSize] = useState("large");
@@ -105,7 +107,7 @@ export default function Dashboard({ children }) {
                 <NavLink
                   activeClassName="active"
                   to="/dashboard/invest"
-                  id="payment"
+                  id="invest"
                   onClick={sideBarToggle}
                 >
                   <NavItem
@@ -164,6 +166,7 @@ export default function Dashboard({ children }) {
               <Route path="/invest" element={<Invest />} />
               <Route path="/referral" element={<Referral />} />
               <Route path="/helpdesk" element={<HelpDesk />} />
+              <Route path="/payment" element={<Payment />}/>
               
             </Routes>
           </AnimatePresence>

@@ -23,6 +23,9 @@ function Invest() {
                         <img class="image" src={ require ("../img/dp.jpg")} alt="oracle_trading_logo" />
                         <p>John Doe</p>
                     </div>
+                    <Link to="/dashboard/payment" id="platform">
+                        <button class="btn">Subscribe</button>
+                    </Link>
                 </div>
                   
             </div> 
