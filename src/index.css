@@ -60,6 +60,7 @@
 .dashboard_header {
   border-right: 1px;
   border-bottom: 1px;
+  border-left: 1px;
   border-style: solid;
   border-color: var(--gray-shade-1);
 }

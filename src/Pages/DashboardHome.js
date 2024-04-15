@@ -84,16 +84,16 @@ const DashboardHome = () => {
       <p className="text-xl md:text-2xl font-bold">
         Hello John, Welcome Onboard
       </p>
-      <div className="px-5 py-3 w-full overflow-auto">
-        <div className="flex gap-5 py-2">
+      <div className="px-5 py-3 max-w-full overflow-hidden">
+        <div className="flex gap-5 w-full py-2 pr-20 xl:px-2 overflow-auto">
           {bitCardItems.map((item, index) => (
             <BitCard key={index} item={item} />
           ))}
         </div>
       </div>
 
-      <div className="px-5 py-3 w-full">
-        <div className="grid grid-cols-3 gap-3">
+      <div className="px-5 pr-20 py-3 max-w-full">
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {cardItems.map((item, index) => (
             <PlainCard key={index} item={item} />
           ))}

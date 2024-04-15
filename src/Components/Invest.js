@@ -1,41 +1,97 @@
-import React from 'react';
+import React from "react";
 import { Helmet } from "react-helmet";
-import {  Outlet, Link } from "react-router-dom"
-import {motion} from "framer-motion";
+import { Outlet } from "react-router-dom";
+import { motion } from "framer-motion";
+import PackageCard from "./dashboard/PackageCard";
+
+const packages = [
+  {
+    name: "Beginners",
+    percent: 1.8,
+    min_deposit: "$1,000",
+    max_deposit: "$1,000",
+    min_return: "$7,500",
+    max_return: "$15,000",
+    gift_bonus: "$800.00",
+    duration: "7 days",
+  },
+  {
+    name: "Beginners",
+    percent: 1.8,
+    min_deposit: "$1,000",
+    max_deposit: "$1,000",
+    min_return: "$7,500",
+    max_return: "$15,000",
+    gift_bonus: "$800.00",
+    duration: "7 days",
+  },
+  {
+    name: "Beginners",
+    percent: 1.8,
+    min_deposit: "$1,000",
+    max_deposit: "$1,000",
+    min_return: "$7,500",
+    max_return: "$15,000",
+    gift_bonus: "$800.00",
+    duration: "7 days",
+  },
+  {
+    name: "Beginners",
+    percent: 1.8,
+    min_deposit: "$1,000",
+    max_deposit: "$1,000",
+    min_return: "$7,500",
+    max_return: "$15,000",
+    gift_bonus: "$800.00",
+    duration: "7 days",
+  },
+  {
+    name: "Beginners",
+    percent: 1.8,
+    min_deposit: "$1,000",
+    max_deposit: "$1,000",
+    min_return: "$7,500",
+    max_return: "$15,000",
+    gift_bonus: "$800.00",
+    duration: "7 days",
+  },
+  {
+    name: "Beginners",
+    percent: 1.8,
+    min_deposit: "$1,000",
+    max_deposit: "$1,000",
+    min_return: "$7,500",
+    max_return: "$15,000",
+    gift_bonus: "$800.00",
+    duration: "7 days",
+  },
+];
 
 function Invest() {
   return (
-    <motion.div  
-    initial={{width: "0",  opacity: 0}}
-    animate={{width: "100%", opacity: 1}}
-    exit={{ transition: {type: "spring", 
-    duration: .5, delay: 0}}} > 
-        <Helmet>
-            <meta charSet="utf-8" />
-            <title>Investment - Digitalizecrpyto.com</title>
-            <link rel="canonical" href="http://digitalizecrpyto.com/investment" />
-        </Helmet>
-        <div class="investment  w3-col l12 m12 s12"> 
-            <div class="sub">
-                <div class="dashboard">
-                    <h1 class="title-d">Make Investment</h1>
-                    <div class="dp">
-                        <img class="image" src={ require ("../img/dp.jpg")} alt="oracle_trading_logo" />
-                        <p>John Doe</p>
-                    </div>
-                    <Link to="/dashboard/payment" id="platform">
-                        <button class="btn">Subscribe</button>
-                    </Link>
-                </div>
-                  
-            </div> 
-                      
+    <motion.div
+      initial={{ width: "0", opacity: 0 }}
+      animate={{ width: "100%", opacity: 1 }}
+      exit={{ transition: { type: "spring", duration: 0.5, delay: 0 } }}
+    >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Investment - Digitalizecrpyto.com</title>
+        <link rel="canonical" href="http://digitalizecrpyto.com/investment" />
+      </Helmet>
+      <div className="max-h-full rm_scroll overflow-auto p-5 pr-0">
+        <h1 className="font-bold text-primary-blue">Available packages</h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+          {packages.map((packageItem, index) => (
+            <PackageCard key={index} item={packageItem} />
+          ))}
         </div>
-       
-        <Outlet/>
-  
+      </div>
+
+      <Outlet />
     </motion.div>
-  )
+  );
 }
 
-export default Invest
+export default Invest;

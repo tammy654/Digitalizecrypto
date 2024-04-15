@@ -18,7 +18,7 @@ const Profile = () => {
           href="http://oracletrading.com/dashboard/profile"
         />
       </Helmet>
-      <div class="profile w3-col l12 m12 s12">
+      <div class="profile w3-col l12 m12 s12 max-w-full overflow-y-scroll">
         <div class="sub">
           <div class="dashboard">
             <h1 class="title-d">Profile</h1>
