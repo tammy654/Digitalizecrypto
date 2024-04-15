@@ -11,7 +11,7 @@ import Invest from "../Components/Invest";
 import Referral from "../Components/Referral";
 import HelpDesk from "../Components/HelpDesk";
 import DashboardHome from "./DashboardHome";
-import Payment from '../Components/Payment';
+import Payment from "../Components/Payment";
 import Transaction from "../Components/Transaction";
 import NavItem from "../Components/NavItem";
 
@@ -22,7 +22,6 @@ import { GiPayMoney } from "react-icons/gi";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { VscReferences } from "react-icons/vsc";
 import Layout from "../Components/dashboard/Layout";
-
 
 export default function Dashboard({ children }) {
   const [navSize, changeNavSize] = useState("large");
@@ -110,11 +109,7 @@ export default function Dashboard({ children }) {
                   id="invest"
                   onClick={sideBarToggle}
                 >
-                  <NavItem
-                    navSize={navSize}
-                    icon={GiPayMoney}
-                    title="Invest"
-                  />
+                  <NavItem navSize={navSize} icon={GiPayMoney} title="Invest" />
                 </NavLink>
 
                 <NavLink
@@ -152,7 +147,7 @@ export default function Dashboard({ children }) {
                   <NavItem navSize={navSize} icon={MdLogout} title="Logout" />
                 </NavLink>
 
-                <div className="max-h-full w-full overflow-y-hidden">
+                <div className="max-h-full w-full overflow-auto">
                   <Outlet />
                 </div>
               </Flex>
@@ -166,8 +161,7 @@ export default function Dashboard({ children }) {
               <Route path="/invest" element={<Invest />} />
               <Route path="/referral" element={<Referral />} />
               <Route path="/helpdesk" element={<HelpDesk />} />
-              <Route path="/payment" element={<Payment />}/>
-              
+              <Route path="/payment" element={<Payment />} />
             </Routes>
           </AnimatePresence>
         </Flex>

@@ -93,7 +93,7 @@ const DashboardHome = () => {
       </div>
 
       <div className="px-5 pr-20 py-3 max-w-full">
-        <div className="grid w-full grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {cardItems.map((item, index) => (
             <PlainCard key={index} item={item} />
           ))}
