@@ -80,7 +80,7 @@ function Invest() {
         <link rel="canonical" href="http://digitalizecrpyto.com/investment" />
       </Helmet>
       <div className="max-h-full rm_scroll overflow-auto p-5 pr-0">
-        <h1 className="font-bold text-primary-blue">Available packages</h1>
+        <h1 className="font-bold text-primary-blue">Available Packages</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {packages.map((packageItem, index) => (

@@ -11,57 +11,57 @@ import { ScrollToTop } from '../scripts/all_scripts';
 
 const depositData = [
   {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    name: "Alice Jones",
+    amount: "$1,234.56",
+    date: "08/04/2024",
   },
   {
     name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    amount: "$200.00",
+    date: "10/02/2024",
+  },
+  {
+    name: "Emily Wilson",
+    amount: "$1,567.80",
+    date: "11/04/2024",
+  },
+  {
+    name: " Amanda Hernandez",
+    amount: "$32.50",
+    date: "14/04/2024",
   },
   {
     name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
-  },
-  {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
-  },
-  {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    amount: "$860",
+    date: "14/02/2024",
   },
 ];
 
 const paymentData = [
   {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    name: "Sarah J. Garcia",
+    amount: "$78.90",
+    date: "16/04/2024",
   },
   {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    name: "Charles Walker",
+    amount: " $25.75",
+    date: "16/04/2024",
   },
   {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    name: "Christopher Lee",
+    amount: "$140",
+    date: "19/04/2024",
   },
   {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    name: "Michael H. Brown",
+    amount: "$100",
+    date: "19/04/2024",
   },
   {
-    name: "Joe steve",
-    amount: "$1000",
-    date: "02/02/2024",
+    name: "Whitaker B. Blanch",
+    amount: "$215",
+    date: "20/04/2024",
   },
 ];
 
@@ -85,7 +85,7 @@ const Statistics = () => {
           <div className="flex max-lg:flex-wrap-reverse px-3 md:px-28 py-16 justify-between max-lg:justify-center items-center">
             <div className="w-auto xl:w-[639px] text-white">
               <h1 className="text-4xl sm:text-[50px] font-bold uppercase leading-none">
-                statistics
+                Statistics
               </h1>
             </div>
             <div className="">
@@ -97,7 +97,7 @@ const Statistics = () => {
 
       <div className="my-12">
         <div className="flex justify-center">
-          <HeadingTitle title="DIGITALIZECRYOTO STATS" />
+          <HeadingTitle title="DIGITALIZECRYPTO STATS" />
         </div>
 
         <div className="flex items-center max-xl:justify-center max-xl:flex-wrap-reverse max-[1462px]:gap-10 justify-between py-5 px-3 md:px-[100px]">
@@ -108,40 +108,42 @@ const Statistics = () => {
           <div>
             <p className="text-sm sm:text-xl max-md:text-justify">
               Here are online statistics of our company. Competent distribution
-              of investments in the cryptoinvestrobot allows you to maximize
-              profits at all stages of the market. Gradual development is a
+              of investments in the digitalizecrpyto robot allows you to maximize
+              profits at all stages of the market. 
+              <br></br><br></br>
+              Gradual development is a
               guarantee of world recognition in the market. It is important for
               us to ensure the protection of our investors, as well as the
               stability and uninterrupted operation of the platform. The
-              cryptoinvest robot is fully automated to operate without user
+              digitalizecrpyto robot is fully automated to operate without user
               intervention.
             </p>
           </div>
         </div>
 
         <div className="px-3 md:px-[100px] overflow-auto rm_scroll">
-          <div className="flex gap-14 mt-8 w-[550px]">
+          <div className="flex gap-14 mt-8 w-[650px]">
             <div className="flex flex-col gap-3">
-              <p className="font-bold text-base sm:text-3xl text-center">
-                3 000
+              <p className="font-bold text-base gradient-text sm:text-3xl text-center">
+                230
               </p>
               <p>Days in work</p>
             </div>
             <div className="flex flex-col gap-3">
-              <p className="font-bold text-base sm:text-3xl text-center">
-                3 000
+              <p className="font-bold text-base gradient-text sm:text-3xl text-center">
+                925
               </p>
               <p>Total Members</p>
             </div>
             <div className="flex flex-col gap-3">
-              <p className="font-bold text-base sm:text-3xl text-center">
-                3 000
+              <p className="font-bold text-base gradient-text sm:text-3xl text-center">
+                $6720.42
               </p>
               <p>Total Invested</p>
             </div>
             <div className="flex flex-col gap-3">
-              <p className="font-bold text-base sm:text-3xl text-center">
-                3 000
+              <p className="font-bold text-base gradient-text sm:text-3xl text-center">
+                $2140.05
               </p>
               <p>Total Paid</p>
             </div>
@@ -149,9 +151,9 @@ const Statistics = () => {
         </div>
 
         <div className="px-3 md:px-[100px] mt-10">
-          <div className="flex flex-col sm:flex-row gap-5">
-            <Table title="last deposit" data={depositData} />
-            <Table title="last payment" data={paymentData} />
+          <div className="flex flex-col sm:flex-row gap-20">
+            <Table title="Last deposit" data={depositData} />
+            <Table title="Last payment" data={paymentData} />
           </div>
         </div>
       </div>

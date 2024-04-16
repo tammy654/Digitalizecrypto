@@ -9,17 +9,18 @@ const GeneralCommission = () => {
             work. They are not related to the profit received by our investors
             <br></br>
             <br></br>
-            <br></br>
-            <li className="text-justify">
-              COMPANY COMMISSION: 0.5% from the received profit by the robot.
-              This commission shows the earnings of the entire cryptoinvest
-              structure, namely, each employee.
-            </li>
-            <li className="text-justify">
-              ADMINISTRATIVE COMMISION: 0.5% for technical support of the robot
-              and the company as a whole. This commission includes the
-              development and marketing costs of the company.
-            </li>
+            <ul className="list-disc">
+              <li className="text-justify">
+                COMPANY COMMISSION: 0.5% from the received profit by the robot.
+                This commission shows the earnings of the entire cryptoinvest
+                structure, namely, each employee.
+              </li>
+              <li className="text-justify">
+                ADMINISTRATIVE COMMISION: 0.5% for technical support of the robot
+                and the company as a whole. This commission includes the
+                development and marketing costs of the company.
+              </li>
+            </ul>
           </p>
         </div>
       </div>

@@ -5,8 +5,8 @@ const Accordion = ({ data }) => {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <div className="p-2 sm:p-5 flex justify-between border border-solid border-gray-shade-1">
-        <p className="text-base sm:text-2xl font-bold">{data.question}</p>
+      <div className="p-2 sm:p-5 flex justify-between border border-solid border-gray-shade-1 cursor-pointer" onClick={() => setOpen(!open)}>
+        <p className="text-base sm:text-xl font-bold gradient-text">{data.question}</p>
         <button onClick={() => setOpen(!open)}>
           <img src={arrowDown} alt="arrow icon for accordion" />
         </button>

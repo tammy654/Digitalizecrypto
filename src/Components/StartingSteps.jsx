@@ -3,16 +3,16 @@ import stepsImage2 from "../img/steps.png";
 
 const steps = [
   {
-    title: "registration",
-    text: "curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit viverra aliquet",
+    title: "Registration",
+    text: "Create your secure account in minutes. Enter your email, set a strong password, and verify for safe access to the exciting world of crypto.",
   },
   {
-    title: "choose investment plan",
-    text: "curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit viverra aliquet",
+    title: "Choose investment plan",
+    text: "We offer options for all. Browse our investment plans tailored to your goals, risk tolerance, and experience level. Find the perfect fit to start your crypto journey.",
   },
   {
-    title: "start earning",
-    text: "curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem tortor vitae morbi. Sit viverra aliquet",
+    title: "Start earning",
+    text: "Deposit funds easily using your preferred method and begin earning on your crypto. We make it simple to watch your investment grow through clear dashboards and real-time tracking.",
   },
 ];
 
@@ -22,7 +22,7 @@ const StartingSteps = () => {
       <div className="px-5 sm:px-[100px]">
         <div className="headline flex justify-center gap-2 items-center px-[20px]">
           <div class="line"></div>
-          <h1 className="uppercase text-2xl font-bold text-center">
+          <h1 className="uppercase gradient-text text-2xl font-bold text-center">
             3 steps to start
           </h1>
           <div class="line"></div>
@@ -39,10 +39,13 @@ const StartingSteps = () => {
 
           <ol className="w-full list-decimal flex flex-col gap-5">
             {steps.map((step, index) => (
-              <li key={index} className="text-primary-blue text-justify">
+              
+              <li key={index} className="text-primary-blue text-justify font-bold">
                 <span className="uppercase font-bold">{step.title}:</span>{" "}
-                {step.text}
+                <br></br>
+                <span className="font-normal">{step.text}</span>
               </li>
+              
             ))}
           </ol>
         </div>

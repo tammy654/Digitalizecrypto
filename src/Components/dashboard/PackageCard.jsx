@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 const PackageCard = ({ item }) => {
   return (
     <div className="shadow-lg rounded-lg p-5 xl:p-10 text-primary-blue">
@@ -31,9 +34,12 @@ const PackageCard = ({ item }) => {
           <p>{item.duration}</p>
         </div>
 
-        <button className="text-white linear_bg py-2 px-4 rounded-lg mt-5">
-          Activate plan
-        </button>
+        
+        <Link to="/dashboard/payment" className="w-full btn5 px-10 py-2 text-center align-center">
+         
+            Activate plan
+        
+        </Link>
       </div>
     </div>
   );

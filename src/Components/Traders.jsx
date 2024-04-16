@@ -1,4 +1,5 @@
 import SupportCard from "./SupportCard";
+import { Link } from "react-router-dom";
 
 const Traders = ({ supports }) => {
   return (
@@ -12,7 +13,7 @@ const Traders = ({ supports }) => {
           <div class="line"></div>
         </div>
         <div className="flex justify-center">
-          <p className="w-[530px] gradient-text text-lg text-center">
+          <p className="w-[530px]  text-lg text-center">
             The best cryptocurrency developers works in our company. They have a
             wealth of experience and understanding of the crypto market behind
             them. They brought Digitalizecrypto to the world level of
@@ -31,9 +32,13 @@ const Traders = ({ supports }) => {
         </div>
 
         <div className="flex justify-center">
-          <button className="btn px-10 py-2 rounded-lg duration-300 text-white bg-primary-blue border border-solid border-primary-blue hover:bg-transparent hover:text-primary-blue">
-            Invest with us and get stable income
-          </button>
+          
+          <Link to="/dashboard/invest">
+            <button className="btn px-10 py-2 rounded-lg duration-300 text-white bg-primary-blue border border-solid border-primary-blue hover:bg-transparent hover:text-primary-blue">
+              Invest with us and get stable income
+            </button>
+          </Link>
+          
         </div>
       </div>
     </section>

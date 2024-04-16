@@ -30,25 +30,27 @@ function HelpDesk() {
           </div>
 
           <div className="w-full">
-            <p className="text-base text-center">
-              Digitalizecryoto Customer Care
+            <p className="text-lg xl:text-2xl gradient-text text-center mb-5 font-bold">
+              Digitalizecrypto Customer Care
             </p>
-            <p className="text-sm text-center">
+            <p className="text-sm text-center mb-5">
               For inquiries, suggestions or complains. Mail us
             </p>
             <p className="text-lg xl:text-2xl font-bold text-center">
-              support@digitalizecryoto.com
+              support@digitalizecrypto.com
             </p>
 
             <div>
               <label htmFor="message">Message</label>
-              <textarea className="resize-none border border-solid border-black w-full h-52 rounded-none"></textarea>
+              <textarea className="resize-none border border-solid rounded-xl border-black w-full h-52"></textarea>
             </div>
 
             <div className="flex mt-10 justify-center">
-              <button className="text-white linear_bg w-80 py-2 flex justify-center items-center rounded-md">
+              <Link to="/dashboard">
+                  <button className="btn px-10 py-2 rounded-lg duration-300 text-white bg-primary-blue border border-solid border-primary-blue hover:bg-transparent hover:text-primary-blue">
                 Send
               </button>
+              </Link>
             </div>
           </div>
         </div>

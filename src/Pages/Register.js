@@ -291,8 +291,8 @@ const Register = () => {
           </form>
           <p className="text-center my-5 p-[20px]">
             Already have an account?{" "}
-            <Link to="/signin" className="hover:text-primary-blue">
-              Sign in instead.
+            <Link to="/signin" className="text-primary-blue">
+              <span className="text-stone-400  hover:text-primary-blue">Sign in </span>instead.
             </Link>
           </p>
         </div>

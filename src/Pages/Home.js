@@ -60,12 +60,12 @@ const supports = [
   {
     image: supportImage2,
     title: "STABLE AND AUTOMATED INVESTMENT",
-    text: "The robot is not human-related. And that is why all investments are reliable and completely safe",
+    text: "The robot is not human-related. And that is why all investments are reliable and completely safe. Not hewlps to analyze trends and track performance to stay ahead of the game.",
   },
   {
     image: supportImage,
-    title: "24/7 Support",
-    text: "Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa",
+    title: "Multiple Payment Options",
+    text: "Buy and sell crypto conveniently with a variety of options. This includes bank transfers, credit/debit cards. More options mean a wider audience and a faster transaction process.",
   },
   {
     image: supportImage3,
@@ -75,12 +75,12 @@ const supports = [
   {
     image: supportImage,
     title: "24/7 Support",
-    text: "Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa",
+    text: "Never get stuck with reliable customer support. Get help via live chat, email ticketing, or a comprehensive FAQ section. Fast and friendly assistance builds trust and keeps you on track.",
   },
   {
     image: supportImage,
-    title: "24/7 Support",
-    text: "Lorem ipsum dolor sit amet consectetur. Diam metus lacus dui hac etiam metus amet. Sagittis diam duis tortor in. Id curabitur egestas donec mauris ipsum vitae lorem non semper. Quam urna felis massa",
+    title: "Secure Login and Trading",
+    text: "Strong safeguards like multi-factor authentication and encryption protect your account and transactions. Secure storage of user data and private keys is a must.",
   },
 ];
 
@@ -191,11 +191,9 @@ function Home() {
         </div>
         <div></div>
       </div>
-
       <div>
         <GeneralCommission />
       </div>
-
       <div className="homepage-section-two ">
         <div className="sub px-[20px]">
           <div className="flex justify-center gap-2 items-center px-5">
@@ -259,26 +257,30 @@ function Home() {
           <div>
             <div className="headline flex justify-center gap-2 items-center px-[20px]">
               <div class="line"></div>
-              <h1 className="uppercase text-2xl   font-bold text-center">
+              <h1 className="uppercase text-2xl  gradient-text font-bold text-center">
                 Payment systems
               </h1>
               <div class="line"></div>
             </div>
             <div className="flex justify-center px-[20px]">
-              <p className="text-center w-[430px]">
-                Digitalizecryoto supports a big number of payment systems
+              <p className="text-center w-[430px] font-bold uppercase">
+                Digitalizecrypto supports a big number of payment systems
               </p>
             </div>
           </div>
 
           <div className="mt-5 flex flex-col md:flex-row items-center gap-20 px-[20px]">
             <p className="text-justify w-full">
-              curabitur egestas donec mauris ipsum vitae lorem non semper. Quam
-              urna felis massa nisl eget neque auctor sit. Volutpat fermentum
-              arcu lorem tortor vitae morbi. Sit viverra aliquet curabitur
-              egestas donec mauris ipsum vitae lorem non semper. Quam urna felis
-              massa nisl eget neque auctor sit. Volutpat fermentum arcu lorem
-              tortor vitae morbi. Sit viverra aliquet{" "}
+            Multiple Payment Options: We offer a variety of secure and convenient ways to fund your crypto investments. Choose the option that best suits you:
+            <br></br><br></br>
+           
+              <li>Traditional Methods: Link your bank account for seamless transfers or use your credit/debit card for a quick start (availability may vary).</li>
+              <li>E-wallets: Integrate your favorite e-wallet for a familiar and fast funding experience.</li>
+              <li>Crypto Deposits: Transfer existing cryptocurrency holdings from your own wallet directly to your investment account.</li>
+              <li>Simplified Process: Our secure payment gateway ensures a smooth experience. Follow clear on-screen instructions and complete your deposit in just a few clicks.</li>
+              
+            
+            <br></br>Real-time Updates: Once your deposit is confirmed, the funds will be instantly reflected in your account balance, allowing you to start investing right away.{" "}
             </p>
             <div className="w-full">
               <img src={paymentImage} alt="payments process" />

@@ -190,7 +190,7 @@ const Login = () => {
             </form>
             <p className="p-[20px]">
               New on our platform?{" "}
-              <Link to="/register" className="hover:text-primary-blue">
+              <Link to="/register" className="text-stone-400  hover:text-primary-blue ">
                 Create an account
               </Link>
             </p>
