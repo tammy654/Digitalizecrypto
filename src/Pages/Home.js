@@ -21,33 +21,33 @@ import { ScrollToTop } from "../scripts/all_scripts";
 const proposals = [
   {
     starting: 1.8,
-    deposit: "$1000-$5000",
+    deposit: "$200-$500",
     days: 7,
   },
   {
-    starting: 1.8,
-    deposit: "$1000-$5000",
+    starting: 3,
+    deposit: "$1000-$3000",
     days: 7,
   },
   {
-    starting: 1.8,
-    deposit: "$1000-$5000",
-    days: 7,
+    starting: 2.0,
+    deposit: "$500-$2000",
+    days: 14,
   },
   {
-    starting: 1.8,
-    deposit: "$1000-$5000",
-    days: 7,
+    starting: 5,
+    deposit: "$1000-$3000",
+    days: 30,
   },
   {
-    starting: 1.8,
-    deposit: "$1000-$5000",
-    days: 7,
+    starting: 10,
+    deposit: "$2000-$10000",
+    days: 30,
   },
   {
-    starting: 1.8,
-    deposit: "$1000-$5000",
-    days: 7,
+    starting: 20,
+    deposit: "$10000-Above",
+    days: 30,
   },
 ];
 
